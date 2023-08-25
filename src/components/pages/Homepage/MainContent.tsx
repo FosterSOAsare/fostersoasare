@@ -11,8 +11,8 @@ import Project from "./Project";
 
 const MainContent = () => {
 	return (
-		<article className="w-full lg:w-2/3 h-auto min-h-screen p-4 backdrop-blur">
-			<section className="lg:ml-4 w-full lg:w-[90%] pt-12 mt-12" id="about">
+		<article className="w-full lg:w-2/3  h-auto min-h-screen p-4 backdrop-blur">
+			<section className="lg:ml-4 w-full lg:w-[90%] pt-6 mt-6 lg:pt-12 lg:mt-12" id="about">
 				<p className="w-full lg:leading-[30px]  mb-4 ">
 					Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I've
 					had the privilege of building software for an

@@ -13,7 +13,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className="bg-[#0F172A] text-primary w-full min-h-screen">
-				<section className="w-full lg:gap-8 h-auto max-w-6xl mx-auto flex lg:flex-row flex-col items-start justify-between">
+				<section className="w-full lg:gap-8 h-auto max-w-6xl md:px-4 mx-auto flex lg:flex-row flex-col items-start justify-between">
 					<UserInfo />
 					<MainContent />
 				</section>

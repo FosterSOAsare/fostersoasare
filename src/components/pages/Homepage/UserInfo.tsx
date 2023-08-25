@@ -5,7 +5,7 @@ const UserInfo = () => {
 	return (
 		<article className="py-12 lg:py-24 w-full lg:w-1/2  px-4 lg:sticky top-0 left-0 h-auto lg:h-screen flex flex-col justify-start gap-12">
 			<div>
-				<h1 className="font-bold text-3xl lg:text-5xl mb-2 text-white">Asare Foster</h1>
+				<h1 className="font-bold text-3xl lg:text-5xl mb-2 text-white">Foster Asare </h1>
 				<p className="font-medium mb-4 text-white">MERN Developer at Xennol Limited</p>
 
 				<p className="w-2/3"> I build accessible, inclusive products and digital experiences for the web.</p>

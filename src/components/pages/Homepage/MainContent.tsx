@@ -1,7 +1,8 @@
 import React from "react";
+import Link from "next/link";
 
 import experiences, { experienceType } from "@/data/experience";
-import projects, { projectType } from "@/data/projects";
+import { projectType, homeProjectType, homeProjects } from "@/data/projects";
 
 import Experience from "./Experience";
 
@@ -51,13 +52,13 @@ const MainContent = () => {
 			</section>
 
 			<section className="w-full h-auto py-6 my-6 lg:py-14 lg:my-14" id="projects">
-				{projects.map((project: projectType, index) => (
+				{homeProjects.map((project: homeProjectType, index) => (
 					<Project {...project} key={index} />
 				))}
-				<a href="" className="capitalize text-white2 hover:text-sec">
+				<Link href="/archive" className="capitalize text-white2 hover:text-sec">
 					View full project archive
 					<AiOutlineSwapRight className="inline ml-[5px]" />
-				</a>
+				</Link>
 			</section>
 		</article>
 	);

@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import { projectType } from "@/data/projects";
+import { homeProjectType } from "@/data/projects";
 
 import { AiFillStar } from "react-icons/ai";
 import { BsDownload } from "react-icons/bs";
 
-const Project = ({ name, stars, desc, downloads, image, link, stack }: projectType) => {
+const Project = ({ name, stars, desc, downloads, image, link, stack }: homeProjectType) => {
 	return (
 		<div className="w-full  card h-auto mb-12 flex items-start flex-col md:flex-row justify-between gap-4 group  rounded-[10px] lg:p-4">
 			<div className="w-full md:w-1/3 h-48 lg:h-32 rounded-[5px] overflow-hidden relative">
@@ -35,7 +35,7 @@ const Project = ({ name, stars, desc, downloads, image, link, stack }: projectTy
 				{stack && (
 					<div className="mt-2 w-full lg:w-4/5">
 						{stack?.map((item, index) => (
-							<p key={index} className="bg-slate-50 bg-opacity-5 text-[#2DD4BF] rounded-full px-3 text-sm p-[4px] inline-block mb-2 mr-[6px]">
+							<p key={index} className="bg-slate-50 hover:bg-opacity-20 hover:cursor-pointer bg-opacity-5 text-[#2DD4BF] rounded-full px-3 text-sm p-[4px] inline-block mb-2 mr-[6px]">
 								{item}
 							</p>
 						))}

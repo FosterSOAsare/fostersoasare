@@ -4,7 +4,7 @@ import { BiLogoGithub, BiLogoInstagram, BiLogoTwitter, BiLogoLinkedin } from "re
 
 const Footer = () => {
 	return (
-		<footer className="w-full mt-auto  h-8 flex items-center gap-5">
+		<footer className="w-full md:mt-auto  h-8 flex items-center gap-5">
 			<a href="">
 				<BiLogoGithub className="text-3xl text-[#C5D1EC] hover:text-sec" />
 			</a>

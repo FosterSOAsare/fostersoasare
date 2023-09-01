@@ -18,9 +18,8 @@ const archive = () => {
 
 				<article className="w-full h-auto mt-4 md:gap-4 lg:gap-0 py-4 border-b-[1px] border-slate-300/10 flex justify-between items-center">
 					<p className="w-1/5 md:w-[10%] text-sm">Year</p>
-					<p className="w-4/5 md:w-1/2 lg:w-[30%] font-bold text-sm">Project</p>
-					<p className="w-[10%] hidden lg:block font-bold text-sm">Made at</p>
-					<p className="w-[30%] hidden lg:block font-bold text-sm">Built with</p>
+					<p className="w-4/5 md:w-1/2 lg:w-[35%] font-bold text-sm">Project</p>
+					<p className="w-[35%] hidden lg:block font-bold text-sm">Built with</p>
 					<p className="md:w-[40%] w-[20%] lg:w-[20%] hidden md:block font-bold text-sm">Link</p>
 				</article>
 				{projects.map((project, index) => (

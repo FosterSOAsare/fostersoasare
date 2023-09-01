@@ -14,8 +14,8 @@ html {
 	background-color: #000;
 	color: #fff;
 }
-.active_link a {
-	@apply text-white;
+.active_link p {
+	@apply !text-white;
 }
 .active_link span {
 	@apply w-16;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 
 import experiences, { experienceType } from "@/data/experience";
@@ -9,39 +9,45 @@ import Experience from "./Experience";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import Project from "./Project";
 
-const MainContent = () => {
+const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetStateAction<number>> }) => {
+	const aboutRef = useRef<any>(null);
+	const experienceRef = useRef<any>(null);
+	const projectsRef = useRef<any>(null);
+
+	useEffect(() => {
+		if (!aboutRef?.current || !experienceRef?.current || !projectsRef?.current) return;
+		function checkInView() {
+			// This is to check the first true value and set it as the selected
+			let values = [isInViewport(aboutRef?.current), isInViewport(experienceRef?.current), isInViewport(projectsRef?.current)];
+			let index = values.findIndex((v) => v === true);
+			setSelected(index);
+		}
+		function isInViewport(element: any) {
+			const rect = element?.getBoundingClientRect();
+			if (!rect) return;
+			return rect.bottom >= 0 && rect.left >= 0 && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+		}
+		window.addEventListener("scroll", checkInView);
+
+		return () => {
+			window.removeEventListener("scroll", checkInView);
+		};
+	}, []);
+
 	return (
 		<article className="w-full lg:w-2/3  h-auto min-h-screen p-4 backdrop-blur">
-			<section className="lg:ml-4 w-full lg:w-[90%] pt-0 md:pt-6 mt-6 lg:pt-12 lg:mt-12" id="about">
+			<section className="lg:ml-4 w-full lg:w-[90%] pt-0 md:pt-6 mt-6 lg:pt-12 lg:mt-12" id="about" ref={aboutRef}>
 				<p className="w-full lg:leading-[30px]  mb-4 ">
-					Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I've
-					had the privilege of building software for an
-					<a href="" className="ml-[4px] hover:text-sec text-white2">
-						advertising agency
-					</a>
-					,
-					<a href="" className="ml-[4px] hover:text-sec text-white2">
-						a start-up
-					</a>
-					,
-					<a href="" className="ml-[4px] hover:text-sec text-white2">
-						a student-led design studio
-					</a>
-					, and a
-					<a href="" className="ml-[4px] hover:text-sec text-white2">
-						huge corporation.
-					</a>
+					In 2020, I discovered my passion for web and mobile development during my Senior High School years. Self-driven learning, tutorials, and practice led me to secure my first contract
+					as a PHP developer at UNIFIN. Subsequent experiences with startups and senior developers further enriched my skills, resulting in the creation of high-performance projects.
+					<br />
+					<br />
+					Beyond my professional pursuits, I have a strong interest in music, occasional article writing, and coding. This summary encapsulates my journey and interests, and I am available
+					for discussions and collaborations
 				</p>
-
-				<p className="w-full  mb-4">
-					My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything
-					you need to know to build a web app with the Spotify API.
-				</p>
-
-				<p>When I'm not at the computer, I'm usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds</p>
 			</section>
 
-			<section className="w-[95%] h-auto py-6 my-6 lg:py-14 lg:my-14" id="experience">
+			<section className="w-[95%] h-auto py-6 my-6 lg:py-14 lg:my-14" id="experience" ref={experienceRef}>
 				{experiences.map((experience: experienceType, index) => (
 					<Experience {...experience} key={index} />
 				))}
@@ -51,7 +57,7 @@ const MainContent = () => {
 				</a>
 			</section>
 
-			<section className="w-full h-auto py-6 my-6 lg:py-14 lg:my-14" id="projects">
+			<section className="w-full h-auto py-6 my-6 lg:py-14 lg:my-14" id="projects" ref={projectsRef}>
 				{homeProjects.map((project: homeProjectType, index) => (
 					<Project {...project} key={index} />
 				))}

@@ -1,3 +1,12 @@
+import TasteEatImage from '@/assets/tasteeat.png';
+import HubspotImage from '@/assets/hubspot.png';
+import WiseImage from '@/assets/wise-app.png';
+import BlogAppImage from '@/assets/blog-app.png'
+import RestCountryImage from '@/assets/rest-country.png'
+import XennolImage from '@/assets/xennol.png'
+import { StaticImageData } from 'next/image';
+
+
 export type homeProjectType = {
   name: string;
   link: string;
@@ -5,34 +14,45 @@ export type homeProjectType = {
   stars?: number;
   downloads?: string;
   stack?: string[];
-  image: string
+  image: string | StaticImageData
 }
 
 export const homeProjects: homeProjectType[] = [
   {
-    name: 'Build a Spotify Connected App',
-    link: 'https://www.newline.co/courses/build-a-spotify-connected-app',
-    image: 'https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&w=256&q=75',
-    desc: `Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.`,
+    name: 'Restaurant Web App(taste-eat)',
+    link: 'https://taste-eat-eta.vercel.app/',
+    image: TasteEatImage,
+    stack: ['React', 'NodeJs', 'MUI', 'Express', 'MongoDB', 'JavaScript'],
+    desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
   }, {
-    name: 'Spotify Profile',
-    image: 'https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&w=256&q=75',
-    desc: 'Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-    stars: 567,
-    stack: ['React', 'Express', 'Spotify API', 'Heroku'],
-    link: 'https://spotify-profile.herokuapp.com/'
+    name: 'Xennol Landing Page',
+    link: 'https://xennol.com',
+    image: XennolImage,
+    stack: ['React', 'NodeJs', 'Tailwindcss', 'Express', 'MongoDB', 'TypeScript'],
+    desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
   }, {
-    name: 'Halcyon Theme',
-    desc: 'Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.',
-    downloads: '100k+',
-    link: 'https://halcyon-theme.netlify.app/',
-    image: 'https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fhalcyon.png&w=256&q=75'
+    name: 'Hubspot Homepage Clone',
+    image: HubspotImage,
+    desc: 'Clone of the homepage of one of the best websites that offers softwares , tools and resources for your business',
+    stack: ['HTML', 'Scss', 'Javascript', 'DOM'],
+    link: 'https://hubspot-two.vercel.app/'
   }, {
-    name: 'brittanychiang.com (v4)',
-    desc: 'An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks',
-    stars: 6528,
+    name: 'Blog App(read.cash clone)',
+    desc: 'Growing up , I was at an advantage to get to know of a website called read.cash where I could write articles and get paid. I therefore decided to create a blog app that mimicks what that website does',
+    link: 'https://blog-site-d48bd.firebaseapp.com/',
+    image: BlogAppImage,
+    stack: ['React', 'Firebase', 'Scss', 'Javascript'],
+  }, {
+    name: 'Wise website clone',
+    desc: 'A clone of the homepage of an internation website that deals with the sending of incentives from abroad to their relatives in mostly African countries',
     stack: ['Gatsby', 'Styled Components', 'Netlify'],
-    image: 'https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fv4.png&w=256&q=75',
+    image: WiseImage,
+    link: 'https://v4.brittanychiang.com/'
+  }, {
+    name: 'Rest Country API Project',
+    desc: 'A frontend challenge project from frontendmentor.io. This was a fun way to rehearse on Js, CSS and HTML',
+    stack: ['HTML', 'Scss', 'Javascript', 'DOM'],
+    image: RestCountryImage,
     link: 'https://v4.brittanychiang.com/'
   }
 ]

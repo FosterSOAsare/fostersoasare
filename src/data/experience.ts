@@ -11,56 +11,58 @@ export type experienceType = {
 
 const experiences = [
   {
-    position: 'Lead Engineer',
-    company: 'Upstatement',
-    desc: 'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-    stack: ['React', 'React Native', 'SCSS', 'WordPress', 'Javascript', 'Typescript', "PHP"],
-    links: [],
-    startDate: '2018',
+    position: 'Fullstack Developer',
+    company: 'Xennol Limited',
+    desc: 'Proficiently develop high-quality, robust production code across a wide spectrum of projects, showcasing versatility and adaptability in delivering tailored solutions. My experience spans a diverse array of assignments, demonstrating the ability to work independently and excel in various project environments.',
+    stack: ['NextJs', 'MongoDB', 'Typescript', 'TailwindCSS', 'AWS', 'Express', 'Node'],
+    links: [
+      { name: 'Procvcreator', href: 'https://procvcreator.com' },
+      { name: 'Xennol Website', href: 'https://xennol.com' },
+    ],
+    startDate: 'JUL 2023',
     endDate: 'PRESENT'
   },
   {
-    position: 'UI Engineer Co-op',
-    company: 'Apple',
-    desc: `Developed and styled interactive web apps for Apple Music, including the UI of Apple Music's embeddable web player widget for in-browser user authorization and full song playback.`,
-    stack: ['Ember', 'SCSS', 'Javascript', 'MusicKit.js'],
+    position: 'Lead Developer',
+    company: 'Zest',
+    desc: `Developed an interactive web app for a Point of Sale (POS) system, with a focus on features related to stock management. This ongoing project involves enhancing the functionality and user interface of the POS system for efficient stock tracking and management.`,
+    stack: ['Node', 'Express', 'MongoDB', 'NextJs', 'TailwindCSS'],
     links: [
-      { name: 'MusicKit.js', href: 'https://developer.apple.com/documentation/musickitjs' },
-      { name: '9to5Mac', href: 'https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/' },
-      { name: 'The Verge', href: 'https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming' }
+      // { name: 'MusicKit.js', href: 'https://developer.apple.com/documentation/musickitjs' },
+      // { name: '9to5Mac', href: 'https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/' },
+      // { name: 'The Verge', href: 'https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming' }
     ],
-    startDate: 'JULY',
-    endDate: 'DEC 2017'
+    startDate: 'AUG 2023',
+    endDate: 'PRESENT'
   },
   {
-    position: 'Developer',
-    company: 'Scout Studio',
-    desc: `Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.`,
-    stack: ['Jekyll', 'SCSS', 'Javascript', 'WordPress'],
-    links: [],
-    startDate: '2016',
-    endDate: '2017'
+    position: 'Frontend Web Developer',
+    company: 'Cedirates',
+    desc: `Developed, maintained, and successfully deployed production code for a comprehensive website project with a primary objective is  providing up-to-date information regarding about a wide range of topics. This involved  a user-friendly interface, and a seamless browsing experience for visitors seeking information on various subjects`,
+    stack: ['React', 'CSS', 'Javascript'],
+    links: [{ name: 'Cedirates', href: 'https://cedirates.com' },],
+    startDate: 'FEB 2023',
+    endDate: 'PRESENT'
   },
   {
-    position: 'Software Engineer Co-op',
-    company: 'Starry',
-    desc: `Worked with the UI team to engineer and improve major features of Starry's customer-facing Android app.`,
-    stack: ['Cardova', 'Backbone', 'Javascript', 'CSS'],
+    position: 'Frontend Developer',
+    company: 'WalletHack',
+    desc: `Collaborated with a senior developer on a Stellar blockchain project, focusing on creating a seamless, user-friendly environment for on-the-go trading and various other activities.`,
+    stack: ['Angular', 'SCSS', 'Javascript', 'Codepen'],
+    links: [{ name: 'Wallethack', href: 'https://wallethack.com' },],
+    startDate: 'NOV 2022',
+    endDate: 'MAR 2023'
+  },
+  {
+    position: 'PHP Developer',
+    company: 'UNIFIN',
+    desc: `Contributed to the development of a closed system designed to establish a community based on referrals. The system implemented a democratic decision-making process, where community members voted on the allocation of earned funds. Leveraged highly customizable components to build a high-performance application for this purpose.`,
+    stack: ['PHP', 'Scss', 'Javascript', 'Hostinger', 'WalletConnect', 'Stellar'],
     links: [
-      { name: 'Android app', href: 'https://play.google.com/store/apps/details?id=com.starry.management&hl=en_US&gl=US' },
-      { name: 'ScreenTime 2.0', href: 'https://starry.com/blog/product/whats-new-screentime-just-got-better-for-parents' }
+
     ],
-    startDate: 'JULY',
-    endDate: 'DEC 2016'
-  },
-  {
-    position: 'Creative Technologist Co-op',
-    company: 'MullenLowe',
-    desc: 'Developed, maintained, and shipped production code for client websites. Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more.',
-    stack: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-    links: [],
-    startDate: 'JULY',
-    endDate: 'DEC 2015'
+    startDate: 'APR',
+    endDate: 'NOV 2022'
   },
 
 ]

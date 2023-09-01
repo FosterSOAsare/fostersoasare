@@ -8,7 +8,7 @@ import { HiOutlineArrowLongLeft } from "react-icons/hi2";
 
 const archive = () => {
 	return (
-		<main className="w-full text-white bg-[#0F172A] h-auto">
+		<main className="relative z-[2] w-full text-white h-auto">
 			<div className="w-full max-w-6xl mx-auto min-h-screen py-12 md:py-24 px-6 md:px-8 lg:px-0">
 				<Link href="/" className="font-bold text-lg text-sec hover:text-xl transition-all duration-200">
 					<HiOutlineArrowLongLeft className="inline mr-[4px] relative text-md -top-[2px]" />

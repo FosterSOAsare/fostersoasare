@@ -34,7 +34,7 @@ export const homeProjects: homeProjectType[] = [
     name: 'Hubspot Homepage Clone',
     image: HubspotImage,
     desc: 'Clone of the homepage of one of the best websites that offers softwares , tools and resources for your business',
-    stack: ['HTML', 'Scss', 'Javascript', 'DOM'],
+    stack: ['HTML', 'Scss', 'Typescript', 'DOM'],
     link: 'https://hubspot-two.vercel.app/'
   }, {
     name: 'Blog App(read.cash clone)',
@@ -90,7 +90,7 @@ const projects: projectType[] = [{
   year: '2022'
 }, {
   name: 'Hubspot Clone',
-  stack: ['HTML', 'CSS', 'Javascript', 'DOM'],
+  stack: ['HTML', 'CSS', 'Typescript', 'DOM'],
   link: { name: 'hubspot-two.vercel.app', href: 'https://hubspot-two.vercel.app/' },
   year: '2022'
 }, {

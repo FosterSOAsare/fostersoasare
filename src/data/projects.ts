@@ -100,7 +100,7 @@ const projects: projectType[] = [{
   year: '2021'
 }, {
   name: 'Modern Nest Landing Page',
-  stack: ['React', 'Tailwindcss', 'Javascript'],
+  stack: ['React', 'Tailwindcss', 'Javascript', 'Swiper'],
   link: { name: 'furniture-beryl.vercel.app', href: 'https://furniture-beryl.vercel.app/' },
   year: '2022'
 }, {

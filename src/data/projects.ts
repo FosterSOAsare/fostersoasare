@@ -45,7 +45,7 @@ export const homeProjects: homeProjectType[] = [
   }, {
     name: 'Wise website clone',
     desc: 'A clone of the homepage of an internation website that deals with the sending of incentives from abroad to their relatives in mostly African countries',
-    stack: ['Gatsby', 'Styled Components', 'Netlify'],
+    stack: ['React', 'Firebase', 'Javascript', 'MUI'],
     image: WiseImage,
     link: 'https://v4.brittanychiang.com/'
   }, {
@@ -85,7 +85,7 @@ const projects: projectType[] = [{
   year: '2023'
 }, {
   name: 'Wise Website Clone',
-  stack: ['React', 'Typescript', 'MUI', 'Firebase'],
+  stack: ['React', 'Javascript', 'MUI', 'Firebase'],
   link: { name: 'wise-ef84b.web.app', href: 'https://wise-ef84b.web.app/' },
   year: '2022'
 }, {

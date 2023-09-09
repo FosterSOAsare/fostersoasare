@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import experiences, { experienceType } from "@/data/experience";
 import { projectType, homeProjectType, homeProjects } from "@/data/projects";
+import stack from "@/data/stack";
 
 import Experience from "./Experience";
 
@@ -65,6 +67,16 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 					View full project archive
 					<AiOutlineSwapRight className="inline ml-[5px]" />
 				</Link>
+			</section>
+
+			<section className="w-full h-auto gap-8  my-6 grid grid-cols-6 md:grid-cols-8  lg:my-14" id="stack" ref={projectsRef}>
+				{stack.map((item, index) => {
+					return (
+						<div key={index} className="w-full relative h-12">
+							<Image src={item} fill alt="Image" />
+						</div>
+					);
+				})}
 			</section>
 		</article>
 	);

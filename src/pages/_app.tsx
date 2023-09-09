@@ -33,22 +33,14 @@ export default function App({ Component, pageProps }: AppProps) {
 					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code. Adept at collaborating within Agile and Scrum frameworks to achieve team goals effectively."
 					data-rh="true"
 				/>
-				<meta
-					property="og:title"
-					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code. Adept at collaborating within Agile and Scrum frameworks to achieve team goals effectively."
-					data-rh="true"
-				/>
+				<meta property="og:title" content="Experienced Software Developer proficient in building projects forr client's needs" data-rh="true" />
 				<meta
 					property="og:description"
 					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code."
 					data-rh="true"
 				/>
 				<meta property="og:url" content="https://fostersoasare.vercel.app" data-rh="true" />
-				<meta
-					name="twitter:title"
-					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code."
-					data-rh="true"
-				/>
+				<meta name="twitter:title" content="Experienced Software Developer proficient in building projects forr client's needs." data-rh="true" />
 
 				<meta name="twitter:url" content="https://fostersoasare.vercel.app" data-rh="true" />
 				<meta

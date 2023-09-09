@@ -47,13 +47,13 @@ export const homeProjects: homeProjectType[] = [
     desc: 'A clone of the homepage of an internation website that deals with the sending of incentives from abroad to their relatives in mostly African countries',
     stack: ['React', 'Firebase', 'Javascript', 'MUI'],
     image: WiseImage,
-    link: 'https://v4.brittanychiang.com/'
+    link: 'https://wise-ef84b.web.app'
   }, {
     name: 'Rest Country API Project',
     desc: 'A frontend challenge project from frontendmentor.io. This was a fun way to rehearse on Js, CSS and HTML',
     stack: ['HTML', 'Scss', 'Javascript', 'DOM'],
     image: RestCountryImage,
-    link: 'https://v4.brittanychiang.com/'
+    link: 'https://rest-country-api-xi.vercel.app/'
   }
 ]
 

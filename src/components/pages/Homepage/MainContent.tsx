@@ -53,7 +53,7 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 				{experiences.map((experience: experienceType, index) => (
 					<Experience {...experience} key={index} />
 				))}
-				<a href="" className="capitalize text-white2 hover:text-sec">
+				<a href="/web-resume.pdf" download={true} target="_blank" className="capitalize text-white2 hover:text-sec">
 					View full Resume
 					<AiOutlineSwapRight className="inline ml-[5px]" />
 				</a>

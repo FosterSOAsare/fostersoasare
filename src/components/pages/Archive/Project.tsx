@@ -36,7 +36,7 @@ const Project = ({ name, stack, link, year }: projectType) => {
 			</div>
 			<div className="hidden md:block md:w-[40%] w-[20%] lg:w-[20%] ">
 				{link?.name && (
-					<a href={link?.href} className="group hover:cursor-pointer hover:text-sec  opacity-90 text-sm">
+					<a href={link?.href} target="_blank" rel="noreferrer" className="group hover:cursor-pointer hover:text-sec  opacity-90 text-sm">
 						{link?.name ? link.name : ""}
 						{link?.name && <HiArrowUpRight className="inline ml-[4px] text-[12px] relative top-0 left-0 group-hover:-top-2 group-hover:left-2 transition-all duration-250" />}
 					</a>

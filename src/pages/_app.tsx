@@ -40,8 +40,8 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta content="#000000" name="theme-color" />
 				<link href="/icon.jpeg" rel="apple-touch-icon" />
 				<link href="/manifest.json" rel="manifest" />
-				<meta property="og:image" content="https://fostersoasare.vercel.app/logo.svg" data-rh="true" />
-				<meta property="twitter:image" content="https://fostersoasare.vercel.app/logo.svg" data-rh="true" />
+				<meta property="og:image" content="https://fostersoasare.vercel.app/pp.jpg" data-rh="true" />
+				<meta property="twitter:image" content="https://fostersoasare.vercel.app/pp.jpg" data-rh="true" />
 				<link rel="canonical" href="https://fostersoasare.vercel.app" data-rh="true" />
 				<meta
 					name="description"

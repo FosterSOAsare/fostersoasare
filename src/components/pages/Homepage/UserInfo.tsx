@@ -1,11 +1,17 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 import Footer from "@/components/Footer";
+
+import ProfileImage from "@/assets/pp.jpg";
 
 const UserInfo = ({ selected, setSelected }: { selected: number; setSelected: React.Dispatch<React.SetStateAction<number>> }) => {
 	return (
 		<article className="py-12 lg:py-24 w-full lg:w-1/2  px-4 lg:sticky top-0 left-0 h-auto lg:h-screen flex flex-col justify-start gap-8 md:gap-12">
 			<div className="">
+				<div className="w-24 h-24 overflow-hidden bg-slate-100 mb-4 relative rounded-full">
+					<Image src={ProfileImage} alt="Asare Foster" fill></Image>
+				</div>
 				<h1 className="font-bold text-3xl lg:text-5xl mb-2 text-white">Foster Asare </h1>
 				<p className="font-medium mb-4 text-sec">MERN Developer at Xennol Limited</p>
 

@@ -3,9 +3,12 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
+import { BsArrowUp } from "react-icons/bs";
+
 export default function App({ Component, pageProps }: AppProps) {
 	const [newCursorPosition, setNewCursorPosition] = useState({ x: 200, y: 500 });
 	const backgroundRef = useRef<any>(null);
+	const [showScroll, setShowScroll] = useState(false);
 
 	useEffect(() => {
 		if (!backgroundRef) return;
@@ -15,6 +18,18 @@ export default function App({ Component, pageProps }: AppProps) {
 		window.addEventListener("mousemove", createNewCursorPosition);
 		return () => {
 			window.removeEventListener("mousemove", createNewCursorPosition);
+		};
+	}, []);
+
+	useEffect(() => {
+		function scrollFunc() {
+			setShowScroll(window.scrollY >= 300);
+		}
+
+		window.addEventListener("scroll", scrollFunc);
+
+		return () => {
+			window.removeEventListener("scroll", scrollFunc);
 		};
 	}, []);
 
@@ -41,8 +56,9 @@ export default function App({ Component, pageProps }: AppProps) {
 				/>
 				<meta property="og:url" content="https://fostersoasare.vercel.app" data-rh="true" />
 				<meta name="twitter:title" content="Experienced Software Developer proficient in building projects forr client's needs." data-rh="true" />
-
+				<meta property="og:image" content="https://fostersoasare.vercel.app/pp.jpg" />
 				<meta name="twitter:url" content="https://fostersoasare.vercel.app" data-rh="true" />
+				<meta property="twitter:image" content="https://fostersoasare.vercel.app/pp.jpg" />
 				<meta
 					name="twitter:description"
 					content="Check exchange rates and fuel prices in Ghana today on CediRates. Find all your price updates in one place for easy comparison and make informed decisions."
@@ -51,9 +67,16 @@ export default function App({ Component, pageProps }: AppProps) {
 			</Head>
 			<main className="w-full relative bg-[#0F172A]">
 				<div
-					className="fixed w-full h-screen   top-0 left-0"
+					className="fixed w-full h-screen top-0 left-0"
 					style={{ background: `radial-gradient(400px at ${newCursorPosition?.x}px ${newCursorPosition.y}px, rgba(29, 78, 216, 0.2), transparent 80%)` }}
 					ref={backgroundRef}></div>
+				<button
+					className={`w-10 h-10 bg-sec flex items-center justify-center fixed transition-all duration-300 ${showScroll ? "scale-100" : "scale-0"} bottom-4 right-4 z-[8] text-black`}
+					onClick={() => {
+						window.scrollTo(0, 0);
+					}}>
+					<BsArrowUp className="text-xl" />
+				</button>
 				<Component {...pageProps} className="z-[2] relative" />;
 			</main>
 		</>

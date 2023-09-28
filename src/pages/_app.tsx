@@ -64,6 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					content="Check exchange rates and fuel prices in Ghana today on CediRates. Find all your price updates in one place for easy comparison and make informed decisions."
 					data-rh="true"
 				/>
+				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 			<main className="w-full relative bg-[#0F172A]">
 				<div

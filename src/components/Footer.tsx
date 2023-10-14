@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { BiLogoGithub, BiLogoInstagram, BiLogoTwitter, BiLogoLinkedin } from "react-icons/bi";
 

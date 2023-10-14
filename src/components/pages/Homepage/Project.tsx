@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
 
 import { homeProjectType } from "@/data/projects";
+
+interface projectType extends homeProjectType {
+	index: number;
+}
 
 import { AiFillStar } from "react-icons/ai";
 import { BsDownload } from "react-icons/bs";
 
-const Project = ({ name, stars, desc, downloads, image, link, stack }: homeProjectType) => {
+const Project = ({ name, stars, desc, downloads, image, link, stack, index }: projectType) => {
+	useEffect(() => {
+		AOS.init({
+			duration: 600,
+		});
+	}, []);
 	return (
-		<div className="w-full  card h-auto mb-12 flex items-start flex-col md:flex-row justify-between gap-4 group  rounded-[10px] lg:p-4">
-			<div className="w-full md:w-1/3 h-48 lg:h-32 rounded-[5px] overflow-hidden relative">
+		<div className="w-full  card h-auto mb-12 flex items-start flex-col md:flex-row justify-between gap-4 group  rounded-[10px] lg:p-4" data-aos={`fade-${index % 2 === 0 ? "left" : "right"}`}>
+			<div className="w-full md:w-1/3 h-56 lg:h-32 rounded-[5px] overflow-hidden relative">
 				<Image src={image} fill alt="Project Lead Image" />
 			</div>
 			<div className="w-full md:w-2/3">

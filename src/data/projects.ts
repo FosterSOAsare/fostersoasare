@@ -7,14 +7,14 @@ import XennolImage from '@/assets/xennol.png'
 import { StaticImageData } from 'next/image';
 
 
-export type homeProjectType = {
+export interface homeProjectType {
   name: string;
   link: string;
   desc: string;
   stars?: number;
   downloads?: string;
   stack?: string[];
-  image: string | StaticImageData
+  image: string | StaticImageData;
 }
 
 export const homeProjects: homeProjectType[] = [

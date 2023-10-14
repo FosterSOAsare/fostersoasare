@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import "aos/dist/aos.css";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -61,12 +62,12 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta property="twitter:image" content="https://fostersoasare.vercel.app/pp.jpg" />
 				<meta
 					name="twitter:description"
-					content="Check exchange rates and fuel prices in Ghana today on CediRates. Find all your price updates in one place for easy comparison and make informed decisions."
+					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code."
 					data-rh="true"
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
-			<main className="w-full relative bg-[#0F172A]">
+			<main className="w-auto relative bg-[#0F172A]">
 				<div
 					className="fixed w-full h-screen top-0 left-0"
 					style={{ background: `radial-gradient(400px at ${newCursorPosition?.x}px ${newCursorPosition.y}px, rgba(29, 78, 216, 0.2), transparent 80%)` }}

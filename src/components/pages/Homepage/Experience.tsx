@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 import { experienceType } from "@/data/experience";
 
 import { BsLink45Deg } from "react-icons/bs";
 
 const Experience = ({ position, company, startDate, endDate, desc, stack, links }: experienceType) => {
+	useEffect(() => {
+		AOS.init({
+			duration: 600,
+		});
+	}, []);
 	return (
-		<div className="w-full  card hover:drop-shadow-lg rounded-[10px] h-auto mb-12 flex flex-col md:flex-row items-start justify-between gap-4 p-4">
+		<div className="w-full  card hover:drop-shadow-lg rounded-[10px] h-auto mb-12 flex flex-col md:flex-row items-start justify-between gap-4 p-4" data-aos="fade-up">
 			<div className="md:w-1/5">
 				<p className="text-[12px] opacity-60 mt-[3px] font-normal">
 					{startDate} - {endDate}

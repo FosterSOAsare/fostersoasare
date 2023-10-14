@@ -38,7 +38,7 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 
 	return (
 		<article className="w-full lg:w-2/3  h-auto min-h-screen p-4 backdrop-blur">
-			<section className="lg:ml-4 w-full lg:w-[90%] pt-0 md:pt-6 mt-6 lg:pt-12 lg:mt-12" id="about" ref={aboutRef}>
+			<section className="lg:ml-4 w-full lg:w-[90%] pt-0 md:pt-6 mt-6 lg:pt-12 lg:mt-12" id="about" ref={aboutRef} data-aos="fade-left">
 				<p className="w-full lg:leading-[30px]  mb-4 ">
 					In 2020, I discovered my passion for web and mobile development during my Senior High School years. Self-driven learning, tutorials, and practice led me to secure my first contract
 					as a PHP developer at UNIFIN. Subsequent experiences with startups and senior developers further enriched my skills, resulting in the creation of high-performance projects.
@@ -61,7 +61,7 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 
 			<section className="w-full h-auto py-6 my-6 lg:py-14 lg:my-14" id="projects" ref={projectsRef}>
 				{homeProjects.map((project: homeProjectType, index) => (
-					<Project {...project} key={index} />
+					<Project {...project} key={index} index={index} />
 				))}
 				<Link href="/archive" className="capitalize text-white2 hover:text-sec">
 					View full project archive
@@ -71,8 +71,9 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 
 			<section className="w-full h-auto gap-8  my-6 grid grid-cols-6 md:grid-cols-8  lg:my-14" id="stack" ref={projectsRef}>
 				{stack.map((item, index) => {
+					let fade = index % 4 === 0 ? "fade-up" : index % 3 === 0 ? "fade-down" : index % 2 === 1 ? "fade-right" : "fade-left";
 					return (
-						<div key={index} className="w-full relative h-12">
+						<div key={index} className="w-full relative h-12" data-aos={fade}>
 							<Image src={item} fill alt="Image" />
 						</div>
 					);

@@ -4,6 +4,7 @@ import WiseImage from '@/assets/wise-app.png';
 import BlogAppImage from '@/assets/blog-app.png'
 import RestCountryImage from '@/assets/rest-country.png'
 import XennolImage from '@/assets/xennol.png'
+import MirrorImage from '@/assets/mirror.jpg'
 import { StaticImageData } from 'next/image';
 
 
@@ -30,6 +31,12 @@ export const homeProjects: homeProjectType[] = [
     image: XennolImage,
     stack: ['NextJs', 'AWS', 'Tailwindcss', 'TypeScript'],
     desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
+  }, {
+    name: 'Mirror Web app',
+    link: 'https://mirror-fa.vercel.app/',
+    image: MirrorImage,
+    stack: ['React', 'Tailwindcss', 'TypeScript'],
+    desc: `Get to know the hidden you. Mirror reveals your true personality, exposing the unseen and unknown self. LOOK INTO THE MIRROR TODAY`,
   }, {
     name: 'Hubspot Homepage Clone',
     image: HubspotImage,

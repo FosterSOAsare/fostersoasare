@@ -82,7 +82,7 @@ const projects: projectType[] = [{
   year: '2023'
 }, {
   name: 'Mirror Web app',
-  link: { name: 'Mirro', href: 'https://mirror-fa.vercel.app/' },
+  link: { name: 'Mirror', href: 'https://mirror-fa.vercel.app/' },
   year: '2023',
   stack: ['React', 'Tailwindcss', 'TypeScript'],
 },

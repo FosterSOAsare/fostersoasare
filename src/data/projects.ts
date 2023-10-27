@@ -81,6 +81,12 @@ const projects: projectType[] = [{
   link: { name: 'xennol.com', href: 'https://xennol.com' },
   year: '2023'
 }, {
+  name: 'Mirror Web app',
+  link: { name: 'Mirro', href: 'https://mirror-fa.vercel.app/' },
+  year: '2023',
+  stack: ['React', 'Tailwindcss', 'TypeScript'],
+},
+{
   name: 'Blog App',
   stack: ['React', 'Scss', 'Firebase', 'Javascript'],
   link: { name: 'blog.app', href: 'https://blog-site-d48bd.firebaseapp.com/' },

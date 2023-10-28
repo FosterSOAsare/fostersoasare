@@ -11,18 +11,6 @@ export type experienceType = {
 
 const experiences = [
   {
-    position: 'Fullstack Developer',
-    company: 'Xennol Limited',
-    desc: 'Proficiently develop high-quality, robust production code across a wide spectrum of projects, showcasing versatility and adaptability in delivering tailored solutions. My experience spans a diverse array of assignments, demonstrating the ability to work independently and excel in various project environments.',
-    stack: ['NextJs', 'MongoDB', 'Typescript', 'TailwindCSS', 'AWS', 'Express', 'Node'],
-    links: [
-      { name: 'Procvcreator', href: 'https://procvcreator.com' },
-      { name: 'Xennol Website', href: 'https://xennol.com' },
-    ],
-    startDate: 'JUL 2023',
-    endDate: 'PRESENT'
-  },
-  {
     position: 'Lead Developer',
     company: 'Zest',
     desc: `Developed an interactive web app for a Point of Sale (POS) system, with a focus on features related to stock management. This ongoing project involves enhancing the functionality and user interface of the POS system for efficient stock tracking and management.`,
@@ -34,6 +22,17 @@ const experiences = [
     ],
     startDate: 'AUG 2023',
     endDate: 'PRESENT'
+  }, {
+    position: 'Fullstack Developer',
+    company: 'Xennol Limited',
+    desc: 'Proficiently developed high-quality, robust production code across a wide spectrum of projects, showcasing versatility and adaptability in delivering tailored solutions. My experience spans a diverse array of assignments, demonstrating the ability to work independently and excel in various project environments.',
+    stack: ['NextJs', 'MongoDB', 'Typescript', 'TailwindCSS', 'AWS', 'Express', 'Node'],
+    links: [
+      { name: 'Procvcreator', href: 'https://procvcreator.com' },
+      { name: 'Xennol Website', href: 'https://xennol.com' },
+    ],
+    startDate: 'JUL 2023',
+    endDate: 'OCT 2023'
   },
   {
     position: 'Frontend Web Developer',

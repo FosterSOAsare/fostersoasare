@@ -19,7 +19,7 @@ const Project = ({ name, stars, desc, downloads, image, link, stack, index }: pr
 	}, []);
 	return (
 		<div className="w-full  card h-auto mb-12 flex items-start flex-col md:flex-row justify-between gap-4 group  rounded-[10px] lg:p-4" data-aos={`fade-${index % 2 === 0 ? "left" : "right"}`}>
-			<div className="w-full md:w-1/3 h-56 lg:h-32 rounded-[5px] overflow-hidden relative">
+			<div className="w-full md:w-1/3 h-[180px] lg:h-32 rounded-[5px] overflow-hidden relative">
 				<Image src={image} fill alt="Project Lead Image" />
 			</div>
 			<div className="w-full md:w-2/3">

@@ -11,26 +11,26 @@ import PhpImage from '@/assets/php.svg'
 import MySQLImage from '@/assets/mysql.svg'
 import JiraImage from '@/assets/jira.svg'
 import Github from '@/assets/github.svg'
-import Cloudinry from '@/assets/cloudinary.svg'
+import Cloudinary from '@/assets/cloudinary.svg'
 import AWSImage from '@/assets/aws.svg'
 import ReduxImage from '@/assets/redux.svg'
 
 const stack = [
-  HTMLImage,
-  TailwindImage,
-  ScssImage,
-  JavascriptImage,
-  TypescriptImage,
-  MongoDBImage,
-  ExpressImage,
-  ReactImage,
-  NodeJsImage,
-  JiraImage,
-  Github,
-  ReduxImage,
-  Cloudinry,
-  AWSImage,
-  PhpImage,
-  MySQLImage
+  { name: 'HTML', image: HTMLImage },
+  { name: 'Tailwind CSS', image: TailwindImage },
+  { name: 'Sass', image: ScssImage },
+  { name: 'Javascript', image: JavascriptImage },
+  { name: 'Typescript', image: TypescriptImage },
+  { name: 'MongoDB', image: MongoDBImage },
+  { name: 'Express Js', image: ExpressImage },
+  { name: 'React Js', image: ReactImage },
+  { name: 'Node Js', image: NodeJsImage },
+  { name: 'JIRA', image: JiraImage },
+  { name: 'Github', image: Github },
+  { name: 'Redux Js', image: ReduxImage },
+  { name: 'Cloudinary', image: Cloudinary },
+  { name: 'AWS', image: AWSImage },
+  { name: 'PHP', image: PhpImage },
+  { name: 'MySQL', image: MySQLImage }
 ]
 export default stack

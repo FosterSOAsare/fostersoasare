@@ -22,7 +22,7 @@ const UserInfo = ({ selected, setSelected }: { selected: number; setSelected: Re
 					Foster Asare{" "}
 				</h1>
 				<p className="font-medium mb-4 text-sec" data-aos="fade-right">
-					MERN Developer at Xennol Limited
+					Fullstack Website Developer
 				</p>
 
 				<p className="" data-aos="fade-down">

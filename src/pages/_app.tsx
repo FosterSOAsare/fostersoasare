@@ -5,11 +5,16 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 
 import { BsArrowUp } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
 	const [newCursorPosition, setNewCursorPosition] = useState({ x: 200, y: 500 });
 	const backgroundRef = useRef<any>(null);
 	const [showScroll, setShowScroll] = useState(false);
+	const { pathname } = useRouter();
+	useEffect(() => {
+		window.scroll(0, 0);
+	}, [pathname]);
 
 	useEffect(() => {
 		if (!backgroundRef) return;
@@ -41,8 +46,8 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta content="#000000" name="theme-color" />
 				<link href="/icon.jpeg" rel="apple-touch-icon" />
 				<link href="/manifest.json" rel="manifest" />
-				<meta property="og:image" content="https://fostersoasare.vercel.app/pp.jpg" data-rh="true" />
-				<meta property="twitter:image" content="https://fostersoasare.vercel.app/pp.jpg" data-rh="true" />
+				<meta property="og:image" content="https://fostersoasare.vercel.app/share.jpg" data-rh="true" />
+				<meta property="twitter:image" content="https://fostersoasare.vercel.app/share.jpg" data-rh="true" />
 				<link rel="canonical" href="https://fostersoasare.vercel.app" data-rh="true" />
 				<meta
 					name="description"
@@ -57,9 +62,9 @@ export default function App({ Component, pageProps }: AppProps) {
 				/>
 				<meta property="og:url" content="https://fostersoasare.vercel.app" data-rh="true" />
 				<meta name="twitter:title" content="Experienced Software Developer proficient in building projects forr client's needs." data-rh="true" />
-				<meta property="og:image" content="https://fostersoasare.vercel.app/pp.jpg" />
+				<meta property="og:image" content="https://fostersoasare.vercel.app/share.jpg" />
 				<meta name="twitter:url" content="https://fostersoasare.vercel.app" data-rh="true" />
-				<meta property="twitter:image" content="https://fostersoasare.vercel.app/pp.jpg" />
+				<meta property="twitter:image" content="https://fostersoasare.vercel.app/share.jpg" />
 				<meta
 					name="twitter:description"
 					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code."

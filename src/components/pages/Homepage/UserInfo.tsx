@@ -9,13 +9,13 @@ import ProfileImage from "@/assets/pp.jpg";
 const UserInfo = ({ selected, setSelected }: { selected: number; setSelected: React.Dispatch<React.SetStateAction<number>> }) => {
 	useEffect(() => {
 		AOS.init({
-			duration: 600,
+			duration: 100,
 		});
 	}, []);
 	return (
 		<article className="py-12 lg:py-24 w-full lg:w-1/2  px-4 lg:sticky top-0 left-0 h-auto lg:h-screen flex flex-col justify-start gap-8">
 			<div className="">
-				<div className="w-16 h-16 overflow-hidden bg-slate-100 mb-4 relative rounded-full" data-aos="fade-down">
+				<div className="w-16 h-16 overflow-hidden border-[3px] bg-slate-100 mb-4 relative rounded-full" data-aos="fade-down">
 					<Image src={ProfileImage} alt="Asare Foster" fill></Image>
 				</div>
 				<h1 className="font-bold text-3xl lg:text-5xl mb-2 text-white" data-aos="fade-left">

@@ -23,7 +23,7 @@ const Project = ({ name, stars, desc, downloads, image, link, stack, index }: pr
 				<Image src={image} fill alt="Project Lead Image" />
 			</div>
 			<div className="w-full md:w-2/3">
-				<a href={link} className="text-white hover:text-sec">
+				<a href={link} target="_blank" rel="noreferrer" className="text-white hover:text-sec">
 					{name}
 				</a>
 				<p className="text-[13px] opacity-60 mt-2">{desc}</p>

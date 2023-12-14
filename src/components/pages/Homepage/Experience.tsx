@@ -12,7 +12,7 @@ const Experience = ({ position, company, startDate, endDate, desc, stack, links 
 		});
 	}, []);
 	return (
-		<div className="w-full  card hover:drop-shadow-lg rounded-[10px] h-auto mb-12 flex flex-col md:flex-row items-start justify-between gap-4 p-4" data-aos="fade-up">
+		<div className="w-full  card hover:drop-shadow-lg rounded-[10px] h-auto mb-12 flex flex-col md:flex-row items-start justify-between gap-4 lg:p-4" data-aos="fade-up">
 			<div className="md:w-1/5">
 				<p className="text-[12px] opacity-60 mt-[3px] font-normal">
 					{startDate} - {endDate}

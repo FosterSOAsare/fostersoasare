@@ -21,6 +21,11 @@ html {
 	@apply w-16;
 }
 
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
 .card {
 	@apply lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:-inset-x-6 lg:hover:bg-slate-800/50 lg:hover:drop-shadow-lg hover:cursor-pointer ease-in-out transition-all duration-300;
 }

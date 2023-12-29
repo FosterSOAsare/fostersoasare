@@ -31,7 +31,7 @@ body {
 }
 
 ::selection {
-	@apply bg-sec;
+	@apply bg-sec !text-white opacity-100;
 }
 ::-webkit-scrollbar {
 	width: 8px;

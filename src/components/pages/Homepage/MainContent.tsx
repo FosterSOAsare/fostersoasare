@@ -38,7 +38,7 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 
 	return (
 		<article className="w-full lg:w-2/3  h-auto min-h-screen p-4 px-6 backdrop-blur">
-			<section className="lg:ml-4 w-full lg:w-[90%] pt-0 md:pt-6 mt-6 lg:pt-12 lg:mt-12" id="about" ref={aboutRef} data-aos="fade-left">
+			<section className="lg:ml-4 w-full lg:w-[90%] pt-0 md:pt-6 mt-6 lg:pt-10 lg:mt-12" id="about" ref={aboutRef} data-aos="fade-left">
 				<p className="w-full lg:leading-[30px]  mb-4 ">
 					In 2020, I discovered my passion for web and mobile development during my Senior High School years. Self-driven learning, tutorials, and practice led me to secure my first contract
 					as a PHP developer at UNIFIN. Subsequent experiences with startups and senior developers further enriched my skills, resulting in the creation of high-performance projects.

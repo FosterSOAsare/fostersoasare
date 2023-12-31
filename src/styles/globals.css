@@ -34,21 +34,27 @@ body {
 	@apply lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:-inset-x-6 lg:hover:bg-slate-800/50 lg:hover:drop-shadow-lg hover:cursor-pointer ease-in-out transition-all duration-300;
 }
 
-::selection {
-	@apply bg-sec !text-white opacity-100;
-}
-::-webkit-scrollbar {
-	width: 8px;
-}
-
-::-webkit-scrollbar-track {
-	@apply bg-[#0F172A] !w-[1px] md:w-[10px];
-}
-
 ::-webkit-scrollbar-thumb {
-	@apply bg-sec !w-[2px] rounded-[20px];
+	@apply !bg-sec;
 }
 
-::-webkit-scrollbar-thumb:hover {
-	@apply bg-[red];
+@media screen and (min-width: 768px) {
+	::selection {
+		@apply bg-sec !text-white opacity-100;
+	}
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		@apply bg-[#0F172A] !w-[1px] md:w-[10px];
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply bg-sec rounded-[20px];
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		@apply bg-[red];
+	}
 }

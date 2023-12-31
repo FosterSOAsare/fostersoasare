@@ -72,9 +72,9 @@ export default function App({ Component, pageProps }: AppProps) {
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
-			<main className="w-[100vw] overflow-x-hidden relative bg-[#0F172A]">
+			<main className="w-auto relative bg-[#0F172A]">
 				<div
-					className="fixed w-[100vw]  h-screen top-0 left-0"
+					className="fixed w-[100vw] overflow-hidden h-screen top-0 left-0"
 					style={{ background: `radial-gradient(400px at ${newCursorPosition?.x}px ${newCursorPosition.y}px, rgba(29, 78, 216, 0.2), transparent 80%)` }}
 					ref={backgroundRef}></div>
 				<button

@@ -8,11 +8,15 @@ html {
 }
 * {
 	font-family: "Inter", sans-serif;
+	/* @apply overflow-x/-hidden; */
 }
 .main-bg {
 	/* background: radial-gradient(600px at 1378px 76px, rgba(29, 78, 216, 0.15), transparent 80%); */
 	background-color: #000;
 	color: #fff;
+}
+body {
+	@apply bg-[#0F172A];
 }
 .active_link p {
 	@apply !text-white;
@@ -38,12 +42,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	@apply bg-[#0F172A];
+	@apply bg-[#0F172A] !w-[1px] md:w-[10px];
 }
 
 ::-webkit-scrollbar-thumb {
-	@apply bg-sec rounded-[20px];
+	@apply bg-sec !w-[2px] rounded-[20px];
 }
 
 ::-webkit-scrollbar-thumb:hover {
+	@apply bg-[red];
 }

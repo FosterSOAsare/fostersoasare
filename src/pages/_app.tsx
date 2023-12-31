@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	}, []);
 
 	return (
-		<>
+		<div>
 			<Head>
 				<meta content="width=device-width,initial-scale=1" name="viewport" />
 				<meta content="#000000" name="theme-color" />
@@ -86,6 +86,6 @@ export default function App({ Component, pageProps }: AppProps) {
 				</button>
 				<Component {...pageProps} className="z-[2] relative" />;
 			</main>
-		</>
+		</div>
 	);
 }

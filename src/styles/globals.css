@@ -8,7 +8,6 @@ html {
 }
 * {
 	font-family: "Inter", sans-serif;
-	/* @apply overflow-x/-hidden; */
 }
 .main-bg {
 	/* background: radial-gradient(600px at 1378px 76px, rgba(29, 78, 216, 0.15), transparent 80%); */
@@ -16,18 +15,13 @@ html {
 	color: #fff;
 }
 body {
-	@apply bg-[#0F172A];
+	@apply bg-[#0F172A] w-[100vw] overflow-x-hidden;
 }
 .active_link p {
 	@apply !text-white;
 }
 .active_link span {
 	@apply w-16;
-}
-
-body {
-	width: 100vw;
-	overflow-x: hidden;
 }
 
 .card {

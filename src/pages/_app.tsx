@@ -72,7 +72,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
-			<main className="w-auto relative bg-[#0F172A]">
+			<main className="w-auto relative">
 				<div
 					className="fixed w-[100vw] overflow-hidden h-auto lg:h-screen top-0 left-0"
 					style={{ background: `radial-gradient(400px at ${newCursorPosition?.x}px ${newCursorPosition.y}px, rgba(29, 78, 216, 0.2), transparent 80%)` }}
@@ -84,7 +84,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					}}>
 					<BsArrowUp className="text-xl" />
 				</button>
-				<Component {...pageProps} className="z-[2] relative" />;
+				<Component {...pageProps} />
 			</main>
 		</div>
 	);

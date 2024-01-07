@@ -7,7 +7,7 @@ import MainContent from "@/components/pages/Homepage/MainContent";
 export default function Home() {
 	const [selected, setSelected] = useState(0);
 	return (
-		<>
+		<div className="w-full h-auto">
 			<Head>
 				<title>Portfolio - Foster Asare</title>
 				<meta
@@ -17,12 +17,12 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/logo.svg" />
 			</Head>
-			<main className="relative z-[2] w-[100vw] overflow-x-hidden lg:overflow-x-visible text-primary min-h-screen">
+			<main className="relative h-auto z-[2] w-[100vw] overflow-visible overflow-x-hidden lg:overflow-x-visible text-primary min-h-screen">
 				<section className="w-full lg:gap-8 relative h-auto max-w-6xl md:px-4 mx-auto flex lg:flex-row flex-col items-start justify-between">
 					<UserInfo {...{ selected, setSelected }} />
 					<MainContent {...{ selected, setSelected }} />
 				</section>
 			</main>
-		</>
+		</div>
 	);
 }

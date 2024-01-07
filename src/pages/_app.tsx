@@ -74,7 +74,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			</Head>
 			<main className="w-auto relative">
 				<div
-					className="fixed w-[100vw] overflow-hidden h-auto lg:h-screen top-0 left-0"
+					className="fixed w-[100vw] overflow-hidden min-h-screen h-auto lg:h-screen top-0 left-0"
 					style={{ background: `radial-gradient(400px at ${newCursorPosition?.x}px ${newCursorPosition.y}px, rgba(29, 78, 216, 0.2), transparent 80%)` }}
 					ref={backgroundRef}></div>
 				<button

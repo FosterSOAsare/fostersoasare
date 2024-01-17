@@ -17,8 +17,8 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/logo.svg" />
 			</Head>
-			<main className="relative h-auto z-[2] w-[100vw] overflow-visible overflow-x-hidden lg:overflow-x-visible text-primary min-h-screen">
-				<section className="w-full lg:gap-8 relative h-auto max-w-6xl md:px-4 mx-auto flex lg:flex-row flex-col items-start justify-between">
+			<main className="w-full relative h-auto">
+				<section className="flex relative text-white flex-col lg:flex-row justify-center items-start">
 					<UserInfo {...{ selected, setSelected }} />
 					<MainContent {...{ selected, setSelected }} />
 				</section>

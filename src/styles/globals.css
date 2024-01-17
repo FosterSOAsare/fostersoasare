@@ -18,7 +18,7 @@ body {
 	@apply bg-[#0F172A] w-[100vw] overflow-x-hidden;
 }
 .active_link p {
-	@apply !text-white;
+	@apply !text-white opacity-100;
 }
 .active_link span {
 	@apply w-16;

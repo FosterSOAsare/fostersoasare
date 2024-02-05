@@ -51,7 +51,7 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 					</p>
 				</section>
 
-				<section className="w-[95%] h-auto py-6 my-6 lg:py-14 lg:my-14" id="experience" ref={experienceRef}>
+				<section className="w-[95%] overflow-hidden h-auto py-6 my-6 lg:py-14 lg:my-14" id="experience" ref={experienceRef}>
 					{experiences.map((experience: experienceType, index) => (
 						<Experience {...experience} key={index} />
 					))}
@@ -61,7 +61,7 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 					</a>
 				</section>
 
-				<section className="overflow-x-hidden overflow-y-auto w-full h-auto py-6 my-6 lg:py-14 lg:my-14" id="projects" ref={projectsRef}>
+				<section className="overflow-hidden overflow-y-auto w-full h-auto py-6 my-6 lg:py-14 lg:my-14" id="projects" ref={projectsRef}>
 					{homeProjects.map((project: homeProjectType, index) => (
 						<Project {...project} key={index} index={index} />
 					))}

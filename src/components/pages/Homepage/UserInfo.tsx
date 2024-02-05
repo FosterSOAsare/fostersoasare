@@ -13,7 +13,7 @@ const UserInfo = ({ selected, setSelected }: { selected: number; setSelected: Re
 		});
 	}, []);
 	return (
-		<article className="py-12 lg:py-22 w-full lg:w-1/2 overflow-x-auto  px-4 relative lg:sticky top-0 left-0 h-auto lg:h-screen  justify-start gap-8">
+		<article className="py-12 lg:py-22 w-full lg:w-1/2  px-4 relative lg:sticky top-0 left-0 h-auto lg:h-screen  justify-start gap-8">
 			<div className="w-full max-w-[500px] h-full lg:ml-auto flex flex-col">
 				<div className="mb-12 lg:mb-6">
 					<div className="w-16 h-16 overflow-hidden border-[3px] bg-slate-100 mb-4 relative rounded-full" data-aos="fade-down">

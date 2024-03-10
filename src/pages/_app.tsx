@@ -71,6 +71,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					data-rh="true"
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
+				<link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,700,500&display=swap" rel="stylesheet" />
 			</Head>
 			<main className="w-auto relative">
 				<div

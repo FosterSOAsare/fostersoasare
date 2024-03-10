@@ -18,7 +18,7 @@ export default function Home() {
 				<link rel="icon" href="/logo.svg" />
 			</Head>
 			<main className="w-full relative h-auto">
-				<section className="flex relative text-white flex-col lg:flex-row justify-center items-start">
+				<section className="flex relative text-white max-w-6xl mx-auto flex-col lg:flex-row justify-center items-start">
 					<UserInfo {...{ selected, setSelected }} />
 					<MainContent {...{ selected, setSelected }} />
 				</section>

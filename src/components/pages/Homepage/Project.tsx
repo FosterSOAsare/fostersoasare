@@ -26,7 +26,7 @@ const Project = ({ name, stars, desc, downloads, image, link, stack, index }: pr
 				<a href={link} target="_blank" rel="noreferrer" className="text-white hover:text-sec">
 					{name}
 				</a>
-				<p className="text-[13px] opacity-60 mt-2">{desc}</p>
+				<p className="text-[13px] leading-[25px] mt-2 font-clash">{desc}</p>
 
 				{stars && (
 					<p className="text-sm mt-2 hover:text-sec  hover:cursor-pointer">

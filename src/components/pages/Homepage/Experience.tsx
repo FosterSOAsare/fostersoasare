@@ -22,7 +22,7 @@ const Experience = ({ position, company, startDate, endDate, desc, stack, links 
 				<p className="text-white hover:text-sec">
 					{position} . <span>{company}</span>
 				</p>
-				<p className="text-sm leading-6 opacity-60 mt-2">{desc}</p>
+				<p className="text-sm  leading-[25px]  mt-2 font-clash">{desc}</p>
 
 				{links && (
 					<div className="mt-2 w-full lg:w-[90%]">

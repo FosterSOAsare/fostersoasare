@@ -7,7 +7,7 @@ html {
 	scroll-behavior: smooth;
 }
 * {
-	font-family: "Inter", sans-serif;
+	@apply font-inter;
 }
 .main-bg {
 	/* background: radial-gradient(600px at 1378px 76px, rgba(29, 78, 216, 0.15), transparent 80%); */
@@ -18,10 +18,10 @@ body {
 	@apply bg-[#0F172A] w-[100vw] overflow-x-hidden;
 }
 .active_link p {
-	@apply !text-white opacity-100;
+	@apply !text-sec opacity-100;
 }
 .active_link span {
-	@apply w-16;
+	@apply w-16 !bg-sec;
 }
 
 .card {

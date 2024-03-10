@@ -12,14 +12,14 @@ const Project = ({ name, stack, link, year }: projectType) => {
 				<div className="block md:hidden">
 					{!link?.name && <p className="w-[90%]">{name}</p>}
 					{link?.name && (
-						<a href={link?.href} className="group hover:cursor-pointer hover:text-sec block md:hidden">
+						<a href={link?.href} className="group font-clash hover:cursor-pointer hover:text-sec block md:hidden">
 							{name}
 							<HiArrowUpRight className="inline ml-[4px] text-[12px] relative top-0 left-0 group-hover:-top-2 group-hover:left-2 transition-all duration-250" />
 						</a>
 					)}
 				</div>
 				{/* For tablet and desktop */}
-				<p className="hidden md:block w-[95%]">{name}</p>
+				<p className="hidden md:block w-[95%] font-medium font-clash">{name}</p>
 			</div>
 			<div className="hidden lg:block w-[35%] text-sm">
 				{stack && (
@@ -27,7 +27,7 @@ const Project = ({ name, stack, link, year }: projectType) => {
 						{stack?.map((item, index) => (
 							<p
 								key={index}
-								className="bg-slate-50 bg-opacity-5 text-[#2DD4BF] rounded-full px-3 font-bold hover:bg-opacity-20 hover:cursor-pointer text-[12px] p-[4px] inline-block mb-2 mr-[6px]">
+								className="bg-slate-50 bg-opacity-5 font-clash text-[#2DD4BF] rounded-full px-3 font-medium hover:bg-opacity-20 hover:cursor-pointer text-[12px] p-[4px] inline-block mb-2 mr-[6px]">
 								{item}
 							</p>
 						))}
@@ -36,7 +36,7 @@ const Project = ({ name, stack, link, year }: projectType) => {
 			</div>
 			<div className="hidden md:block md:w-[40%] w-[20%] lg:w-[20%] ">
 				{link?.name && (
-					<a href={link?.href} target="_blank" rel="noreferrer" className="group hover:cursor-pointer hover:text-sec  opacity-90 text-sm">
+					<a href={link?.href} target="_blank" rel="noreferrer" className="group font-clash hover:cursor-pointer hover:text-sec  opacity-90 text-sm">
 						{link?.name ? link.name : ""}
 						{link?.name && <HiArrowUpRight className="inline ml-[4px] text-[12px] relative top-0 left-0 group-hover:-top-2 group-hover:left-2 transition-all duration-250" />}
 					</a>

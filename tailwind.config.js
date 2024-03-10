@@ -9,6 +9,10 @@ module.exports = {
 				white2: "#ffffff",
 				sec: "#2DD4BF",
 			},
+			fontFamily: {
+				clash: ["'Clash Display' , sans-serif"],
+				inter: ["'Inter', sans-serif"],
+			},
 		},
 	},
 	plugins: [],

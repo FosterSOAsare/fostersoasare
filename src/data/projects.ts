@@ -5,6 +5,7 @@ import BlogAppImage from '@/assets/blog-app.png'
 import RestCountryImage from '@/assets/rest-country.png'
 import XennolImage from '@/assets/xennol.png'
 import MirrorImage from '@/assets/mirror.jpg'
+import AevodropImage from '@/assets/aevodrop.jpg'
 import { StaticImageData } from 'next/image';
 
 
@@ -44,6 +45,12 @@ export const homeProjects: homeProjectType[] = [
     stack: ['HTML', 'Scss', 'Typescript', 'DOM'],
     link: 'https://hubspot-two.vercel.app/'
   }, {
+    name: 'AevoDrop Website',
+    image: AevodropImage,
+    desc: 'The airdrop and presale website of the aevodrop token. It includes a feature for airdrops as well as that for presale. Includes information about the coin as well as whitepaper',
+    stack: ['NextJs', 'Tailwindcss', 'Typescript'],
+    link: 'https://aevodrop.vercel.app/'
+  }, {
     name: 'Blog App(read.cash clone)',
     desc: 'Growing up , I was at an advantage to get to know of a website called read.cash where I could write articles and get paid. I therefore decided to create a blog app that mimicks what that website does',
     link: 'https://blog-site-d48bd.firebaseapp.com/',
@@ -71,6 +78,7 @@ export type projectType = {
   year: string
 }
 const projects: projectType[] = [{
+
   name: 'Taste-eat Restaurant App',
   stack: ['NodeJs', 'React', 'Express', 'MongoDB', 'MUI'],
   link: { name: 'taste-eat-eta.vercel.com', href: 'https://taste-eat-eta.vercel.app/' },
@@ -85,6 +93,11 @@ const projects: projectType[] = [{
   link: { name: 'Mirror', href: 'https://mirror-fa.vercel.app/' },
   year: '2023',
   stack: ['React', 'Tailwindcss', 'TypeScript'],
+}, {
+  name: 'Aevodrop Website',
+  stack: ['NextJs', 'Tailwindcss', 'Typescript'],
+  link: { name: 'aevodrop.vercel.app', href: 'https://aevodrop.vercel.app/' },
+  year: '2024'
 },
 {
   name: 'Blog App',

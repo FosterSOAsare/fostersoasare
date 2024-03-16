@@ -7,9 +7,11 @@ import { projectType, homeProjectType, homeProjects } from "@/data/projects";
 import stack from "@/data/stack";
 
 import Experience from "./Experience";
+import Project from "./Project";
 
 import { AiOutlineSwapRight } from "react-icons/ai";
-import Project from "./Project";
+import { MdSchool, MdWork } from "react-icons/md";
+import { GoProjectRoadmap } from "react-icons/go";
 
 const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetStateAction<number>> }) => {
 	const aboutRef = useRef<any>(null);
@@ -52,20 +54,45 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 				</section>
 
 				<section className="w-[95%] overflow-hidden h-auto py-6 my-6 lg:py-14 lg:my-14" id="experience" ref={experienceRef}>
+					<div className="flex gap-3 items-center mb-5">
+						<span className="flex items-center justify-center w-8 h-8">
+							<MdWork className="text-2xl" />
+						</span>
+						<h3 className="font-clash text-3xl font-bold">Experience</h3>
+					</div>
 					{experiences.map((experience: experienceType, index) => (
 						<Experience {...experience} key={index} />
 					))}
-					<a href="/web-resume.pdf" download={true} target="_blank" className="capitalize text-white2 hover:text-sec">
+					<a href="/web-resume.pdf" download={true} target="_blank" className="font-clash font-medium capitalize text-white2 hover:text-sec">
 						View full Resume
 						<AiOutlineSwapRight className="inline ml-[5px]" />
 					</a>
 				</section>
 
+				<section className="w-[95%] h-auto mt-3">
+					<div className="flex gap-3 items-center mb-5">
+						<span className="flex items-center justify-center w-8 h-8">
+							<MdSchool className="text-2xl" />
+						</span>
+						<h3 className="font-clash text-3xl font-bold">Education</h3>
+					</div>
+					<p className="font-clash">
+						Currently pursuing a 4-year Bsc. Computer Science course at the{" "}
+						<span className="text-sec hover:cursor-pointer font-medium">Kwame Nkrumah University Of Science and Technology, Ghana</span>{" "}
+					</p>
+				</section>
+
 				<section className="overflow-hidden overflow-y-auto w-full h-auto py-6 my-6 lg:py-14 lg:my-14" id="projects" ref={projectsRef}>
+					<div className="flex gap-3 items-center mb-5">
+						<span className="flex items-center justify-center w-8 h-8">
+							<GoProjectRoadmap className="text-2xl" />
+						</span>
+						<h3 className="font-clash text-3xl font-bold">Projects</h3>
+					</div>
 					{homeProjects.map((project: homeProjectType, index) => (
 						<Project {...project} key={index} index={index} />
 					))}
-					<Link href="/archive" className="capitalize text-white2 hover:text-sec">
+					<Link href="/archive" className="font-clash font-medium capitalize text-white2 hover:text-sec">
 						View full project archive
 						<AiOutlineSwapRight className="inline ml-[5px]" />
 					</Link>

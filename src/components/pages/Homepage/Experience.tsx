@@ -19,8 +19,8 @@ const Experience = ({ position, company, startDate, endDate, desc, stack, links 
 				</p>
 			</div>
 			<div className="md:w-4/5">
-				<p className="text-white hover:text-sec">
-					{position} . <span>{company}</span>
+				<p className="font-bold text-sec">
+					{position} <span className="text-sm text-white"> @ {company}</span>
 				</p>
 				<p className="text-sm  leading-[25px]  mt-2 font-clash">{desc}</p>
 

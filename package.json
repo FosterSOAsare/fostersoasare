@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@types/node": "20.5.4",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "^10.4.15",
@@ -19,11 +18,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
-    "tailwindcss": "^3.3.3",
-    "typescript": "5.1.6"
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@types/aos": "^3.0.5",
-    "aos": "^2.3.4"
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.25",
+    "aos": "^2.3.4",
+    "typescript": "^5.4.2"
   }
 }

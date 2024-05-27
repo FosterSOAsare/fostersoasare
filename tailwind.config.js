@@ -12,6 +12,7 @@ module.exports = {
 			fontFamily: {
 				clash: ["'Clash Display' , sans-serif"],
 				inter: ["'Inter', sans-serif"],
+				"product-sans": ["'Product Sans' , sans-serif"],
 			},
 		},
 	},

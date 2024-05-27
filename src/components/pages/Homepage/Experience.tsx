@@ -14,15 +14,15 @@ const Experience = ({ position, company, startDate, endDate, desc, stack, links 
 	return (
 		<div className="w-full  card hover:drop-shadow-lg rounded-[10px] h-auto mb-12 flex flex-col md:flex-row items-start justify-between gap-4 lg:p-4" data-aos="fade-up">
 			<div className="md:w-1/5">
-				<p className="text-[12px] opacity-60 mt-[3px] font-normal">
-					{startDate} - {endDate}
+				<p className="text-[12px] font-clash opacity-60 mt-[3px] font-normal">
+					{startDate} - <span className="text-sec font-bold">{endDate}</span>
 				</p>
 			</div>
 			<div className="md:w-4/5">
-				<p className="font-bold text-sec">
-					{position} <span className="text-sm text-white"> @ {company}</span>
+				<p className="font-bold font-clash text-sec">
+					{position} <span className="text-sm   text-white"> @ {company}</span>
 				</p>
-				<p className="text-sm  leading-[25px]  mt-2 font-clash">{desc}</p>
+				<p className="text-sm leading-[25px] font-light mt-2">{desc}</p>
 
 				{links && (
 					<div className="mt-2 w-full lg:w-[90%]">
@@ -37,7 +37,9 @@ const Experience = ({ position, company, startDate, endDate, desc, stack, links 
 				)}
 				<div className="mt-2 w-[90%]">
 					{stack.map((item, index) => (
-						<p key={index} className="bg-slate-50 hover:cursor-pointer hover:bg-opacity-20 bg-opacity-5 text-[#2DD4BF] rounded-full px-3 text-sm p-[4px] inline-block mb-2 mr-[6px]">
+						<p
+							key={index}
+							className="bg-slate-50 hover:cursor-pointer hover:bg-opacity-20 bg-opacity-5 text-[#2DD4BF] rounded-full font-clash px-3 text-sm p-[4px] inline-block mb-2 mr-[6px]">
 							{item}
 						</p>
 					))}

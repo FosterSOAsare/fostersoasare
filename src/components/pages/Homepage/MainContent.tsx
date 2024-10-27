@@ -43,13 +43,12 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 			<div className="p-4 w-full max-w-[760px] mr-auto px-6">
 				<section className="lg:ml-4 w-full lg:w-[90%] pt-0 md:pt-6 mt-6 lg:pt-10 lg:mt-12" id="about" ref={aboutRef} data-aos="fade-left">
 					<p className="w-full lg:leading-[30px]  mb-4">
-						In 2020, I discovered my passion for web and mobile development during my Senior High School years. Self-driven learning, tutorials, and practice led me to secure my first
-						contract as a PHP developer at UNIFIN. Subsequent experiences with startups and senior developers further enriched my skills, resulting in the creation of high-performance
-						projects.
+						Starting in Senior High School in 2020, my enthusiasm for web and mobile development grew through self-guided study and industry tutorials. This foundation led me to my first
+						PHP project with UNIFIN and further collaboration with startups and mentors, building a portfolio of scalable, high-impact projects.
 						<br />
 						<br />
-						Beyond my professional pursuits, I have a strong interest in music, occasional article writing, and coding. This summary encapsulates my journey and interests, and I am
-						available for discussions and collaborations
+						Music, cybersecurity, and creative writing keep me grounded outside of coding. Now, I'm excited to connect with like-minded teams and work on projects that fuel innovation and
+						learning.
 					</p>
 				</section>
 
@@ -78,7 +77,16 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 					</div>
 					<p className="font-clash">
 						Currently pursuing a 4-year Bsc. Computer Science course at the{" "}
-						<span className="text-sec hover:cursor-pointer font-medium">Kwame Nkrumah University Of Science and Technology, Ghana</span>{" "}
+						<a href="https://www.knust.edu.gh/" target="_blank" className="hover:underline text-sec hover:cursor-pointer font-medium">
+							Kwame Nkrumah University Of Science and Technology, Ghana
+						</a>
+					</p>
+
+					<p className="font-clash mt-4">
+						Pursued a 3-year General Science course at the{" "}
+						<a href="https://en.wikipedia.org/wiki/Presbyterian_Boys%27_Senior_High_School" target="_blank" className="text-sec hover:underline hover:cursor-pointer font-medium">
+							Presbyterian Boys' Secondary School, Legon{" "}
+						</a>{" "}
 					</p>
 				</section>
 

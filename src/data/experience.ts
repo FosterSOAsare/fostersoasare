@@ -25,23 +25,23 @@ const experiences = [
   }, {
     position: 'Fullstack Developer',
     company: 'Xennol Limited',
-    desc: 'Proficiently developed high-quality, robust production code across a wide spectrum of projects, showcasing versatility and adaptability in delivering tailored solutions. My experience spans a diverse array of assignments, demonstrating the ability to work independently and excel in various project environments.',
+    desc: 'Produced resilient, impactful code and constructed a visually engaging landing page for the company, bringing innovative ideas to life. My approach balances technical precision with creativity, adapting smoothly to various roles and project demands.',
     stack: ['NextJs', 'MongoDB', 'Typescript', 'TailwindCSS', 'AWS', 'Express', 'Node'],
     links: [
       { name: 'Procvcreator', href: 'https://procvcreator.com' },
-      { name: 'Xennol Website', href: 'https://xennol.com' },
+      // { name: 'Xennol Website', href: 'https://xennol.com' },
     ],
     startDate: 'JUL 2023',
-    endDate: 'OCT 2023'
+    endDate: 'PRESENT'
   },
   {
     position: 'Frontend Web Developer',
     company: 'Cedirates',
-    desc: `Developed, maintained, and successfully deployed production code for a comprehensive website project with a primary objective is  providing up-to-date information regarding about a wide range of topics. This involved  a user-friendly interface, and a seamless browsing experience for visitors seeking information on various subjects`,
+    desc: `As a frontend developer on CediRates.com, I collaborated on building and deploying a responsive interface that provides real-time exchange rates, fuel prices, and economic news, focusing on user-friendly design and smooth navigation`,
     stack: ['React', 'CSS', 'Javascript'],
     links: [{ name: 'Cedirates', href: 'https://cedirates.com' },],
     startDate: 'FEB 2023',
-    endDate: 'PRESENT'
+    endDate: 'JUN 2023'
   },
   {
     position: 'Frontend Developer',

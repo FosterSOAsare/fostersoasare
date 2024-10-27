@@ -18,8 +18,8 @@ const UserInfo = ({ selected, setSelected }: { selected: number; setSelected: Re
 					<p className="font-medium font-clash mb-4 text-sec">Fullstack Website Developer</p>
 
 					<p className="">
-						Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready
-						code. Adept at collaborating within Agile and Scrum frameworks to achieve team goals effectively.
+						Results-driven website developer with a passion for delivering high-quality, scalable web applications. Proven track record of successfully managing Agile projects, driving
+						collaborative team efforts, and streamlining development processes. Dedicated to staying at the forefront of industry trends and technologies.
 					</p>
 				</div>
 				<nav className="mb-12 lg:mb-0 ">

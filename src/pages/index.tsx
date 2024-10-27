@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<div className="w-full h-auto">
 			<Head>
-				<title>Portfolio - Foster Asare</title>
+				<title>Portfolio - Foster S.O Asare</title>
 				<meta
 					name="description"
 					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code. Adept at collaborating within Agile and Scrum frameworks to achieve team goals effectively."

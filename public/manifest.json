@@ -1,7 +1,7 @@
 {
     "short_name": "Foster S O Asare",
-    "name": "Portfolio of Asare Foster",
-    "description": "A great PWA built with Next.js",
+    "name": "Experienced Software Developer proficient in building projects forr client's needs",
+    "description": "Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code. Adept at collaborating within Agile and Scrum frameworks to achieve team goals effectively.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
@@ -9,7 +9,18 @@
     "icons": [
         {
             "src": "/logo.svg",
-            "type": "image/svg+xlm"
+            "type": "image/svg+xlm",
+            "sizes": "any"
+        },
+        {
+            "src": "/pp.jpg",
+            "sizes": "192x192",
+            "type": "image/jpg"
+        },
+        {
+            "src": "/pp.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
         }
     ]
 }

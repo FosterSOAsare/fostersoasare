@@ -1,16 +1,17 @@
 /** @type {import('next').NextConfig} */
+const withPWA = require("next-pwa")({
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+    cacheOnFrontEndNav: true,
+});
+
 const nextConfig = {
-	reactStrictMode: true,
-	images: {
-		domains: ["brittanychiang.com"],
-	},
-	// webpack(config) {
-	// 	config.module.rules.push({
-	// 		test: /\.svg$/,
-	// 		use: ["@svgr/webpack"],
-	// 	});
-	// 	return config;
-	// },
+    reactStrictMode: true,
+    images: {
+        domains: ["brittanychiang.com"],
+    },
+    // Any other configurations you might need
 };
 
-module.exports = nextConfig;
+module.exports = withPWA(nextConfig);

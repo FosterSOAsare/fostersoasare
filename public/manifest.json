@@ -26,7 +26,7 @@
     "categories": ["productivity", "business", "utilities"],
     "screenshots": [
         {
-            "src": "/screenshots/mobile-home.jpg",
+            "src": "/screenshots/mobile-view.jpg",
             "type": "image/jpg",
             "sizes": "499x1080",
             "form_factor": "narrow"
@@ -34,7 +34,7 @@
         {
             "src": "/screenshots/desktop-view.jpg",
             "type": "image/jpg",
-            "sizes": "1920x837",
+            "sizes": "1080x1920",
             "form_factor": "wide"
         },
         {

@@ -22,5 +22,32 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+    "categories": ["productivity", "business", "utilities"],
+    "screenshots": [
+        {
+            "src": "/screenshots/mobile-home.jpg",
+            "type": "image/jpg",
+            "sizes": "499x1080",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshots/desktop-view.jpg",
+            "type": "image/jpg",
+            "sizes": "1920x837",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshots/desktop-view.jpg",
+            "type": "image/jpg",
+            "sizes": "1080x1920"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "webapp",
+            "url": "https://fostersoasare.vercel.app/manifest.json"
+        }
+    ],
+    "prefer_related_applications": false
 }

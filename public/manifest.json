@@ -28,19 +28,19 @@
         {
             "src": "/screenshots/mobile-view.jpg",
             "type": "image/jpg",
-            "sizes": "499x1080",
+            "sizes": "1080x1920",
             "form_factor": "narrow"
         },
         {
             "src": "/screenshots/desktop-view.jpg",
             "type": "image/jpg",
-            "sizes": "1080x1920",
+            "sizes": "1920x1080",
             "form_factor": "wide"
         },
         {
             "src": "/screenshots/desktop-view.jpg",
             "type": "image/jpg",
-            "sizes": "1080x1920"
+            "sizes": "1920x1080"
         }
     ],
     "related_applications": [

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Asare Foster Solomon Owusu - Resume</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: "Century Gothic", Arial, sans-serif;
+				/* background-color: #f5f5f5; */
+				/* padding: 20px; */
+			}
+
+			.resume {
+				max-width: 740px;
+				margin: 0 auto;
+				background-color: white;
+				min-height: 792px;
+				padding: 11px 11px 43px;
+				color: #2a2a2a;
+				font-size: 12px;
+				line-height: 14px;
+			}
+
+			/* Header */
+			.header {
+				display: table;
+				width: 100%;
+				min-height: 106px;
+				background: #000000e8;
+				margin-bottom: 24px;
+				padding: 20px 0;
+			}
+
+			.name-section {
+				display: table-cell;
+				padding: 20px 30px;
+				width: 50%;
+				vertical-align: middle;
+			}
+
+			.name {
+				font-size: 29px;
+				line-height: 33px;
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: normal;
+			}
+
+			.contact-section {
+				display: table-cell;
+				padding: 20px 30px;
+				width: 50%;
+				vertical-align: top;
+			}
+
+			.contact-info {
+				text-align: right;
+				color: #fff;
+				font-size: 10px;
+				line-height: 10px;
+				padding-top: 7px;
+			}
+
+			.contact-info span {
+				display: block;
+				padding-bottom: 10px;
+			}
+
+			/* Sections */
+			.section {
+				margin-bottom: 20px;
+				position: relative;
+				display: flex;
+				justify-content: flex-start;
+				align-items: stretch;
+				gap: 8px;
+			}
+
+			.section-title {
+				font-size: 12px;
+				line-height: 14px;
+				font-weight: 300;
+				text-transform: uppercase;
+				text-align: right;
+				color: #000;
+				width: 12%;
+				padding: 0 10px;
+				font-weight: 700;
+			}
+
+			.section-content {
+				border-left: 1px solid #d4cfcfc7;
+				padding-left: 16px;
+				width: 80%;
+			}
+
+			.section-content.no-border {
+				border-left: none;
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+			/* Summary */
+			.summary {
+				text-align: justify;
+			}
+
+			/* Skills */
+			.skills-grid {
+				display: table;
+				width: 100%;
+				gap: 30px;
+			}
+
+			.skills-column {
+				display: table-cell;
+				width: 33.33%;
+				vertical-align: top;
+			}
+
+			.skills-column ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.skills-column li {
+				position: relative;
+				margin: 0;
+				padding-left: 18px;
+				padding-top: 4px;
+			}
+
+			.skills-column li:before {
+				content: "•";
+				position: absolute;
+				left: 0;
+				top: 4px;
+			}
+
+			/* Experience */
+			.job {
+				margin-bottom: 15px;
+			}
+
+			.job-header {
+				margin-bottom: 4px;
+			}
+
+			.job-title {
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+
+			.job-dates {
+				font-weight: 600;
+			}
+
+			.company-info {
+				font-weight: 600;
+				margin-bottom: 4px;
+			}
+
+			.job-description ul {
+				list-style: none;
+				margin-left: 5px;
+			}
+
+			.job-description li {
+				position: relative;
+				padding-left: 18px;
+				margin-bottom: 5px;
+			}
+
+			.job-description li:before {
+				content: "•";
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			/* Education */
+			.education-item {
+				margin-bottom: 15px;
+			}
+
+			.school-name {
+				font-weight: bold;
+				margin-bottom: 2px;
+			}
+
+			.degree {
+				font-weight: bold;
+				margin-bottom: 2px;
+			}
+
+			.program-info {
+				margin-bottom: 2px;
+			}
+
+			/* Links */
+			.links ul {
+				list-style: none;
+			}
+
+			.links li {
+				position: relative;
+				padding-left: 18px;
+				margin-bottom: 5px;
+			}
+
+			.links li:before {
+				content: "•";
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			/* Languages */
+			.language-item {
+				margin-bottom: 10px;
+			}
+
+			.language-name {
+				font-weight: bold;
+			}
+
+			.language-level {
+				margin-left: 5px;
+			}
+
+			/* Clear floats */
+			.section:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			@media print {
+				body {
+					-webkit-print-color-adjust: exact;
+					print-color-adjust: exact;
+					background: white;
+				}
+				.resume {
+					border: none;
+					box-shadow: none;
+					padding: 0;
+				}
+				.header {
+					-webkit-print-color-adjust: exact;
+					background: #000000e8 !important;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="resume">
+			<!-- Header -->
+			<div class="header">
+				<div class="name-section">
+					<div class="name">
+						<span>Asare Foster</span><br />
+						<span>Solomon Owusu</span>
+					</div>
+				</div>
+				<div class="contact-section">
+					<div class="contact-info">
+						<span>fostersoasare@gmail.com</span>
+						<span>+233550529015</span>
+						<span>Accra, Ghana</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Summary -->
+			<div class="section">
+				<div class="section-title">Summary</div>
+				<div class="section-content first">
+					<div class="summary">
+						I'm Asare Foster Solomon Owusu, a Computer Science student with a strong passion for software engineering, leadership, and entrepreneurship. I am a results-driven website
+						developer with a passion for delivering high-quality, scalable web and mobile applications. Proven track record of successfully managing Agile projects, driving collaborative
+						team efforts, and streamlining development processes. Dedicated to staying at the forefront of industry trends and technologies.
+					</div>
+				</div>
+			</div>
+
+			<!-- Links -->
+			<div class="section">
+				<div class="section-title">Websites, Portfolios, Profiles</div>
+				<div class="section-content first">
+					<div class="links">
+						<ul>
+							<li>https://fostersoasare.vercel.app</li>
+							<li>https://www.linkedin.com/in/fosterasare-599660232</li>
+							<li>https://x.com/fostersoasare</li>
+							<li>https://github.com/fostersoasare</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Experience -->
+			<div class="section">
+				<div class="section-title">Experience</div>
+				<div class="section-content first">
+					<div class="job">
+						<div class="job-header">
+							<span class="job-title">Founder</span> |
+							<span class="job-dates">06/2024 to Current</span>
+						</div>
+						<div class="company-info">Dev Initiative - Kumasi, Ghana</div>
+						<div class="job-description">
+							<ul>
+								<li>
+									Teaching a team of resilient individuals how to build industry standard web applications. The initiative focuses on empowering individuals with the skills needed to
+									excel in web development, fostering a community of learners and innovators.
+								</li>
+								<li>Collaborating and building client projects to their suit their needs.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="job">
+						<div class="job-header">
+							<span class="job-title">Lead Developer</span> |
+							<span class="job-dates">08/2023 to Current</span>
+						</div>
+						<div class="company-info">Zest - Accra, Ghana</div>
+						<div class="job-description">
+							<ul>
+								<li>Developing an interactive web app for a Point of Sale (POS) system, with a focus on features related to stock management.</li>
+								<li>This ongoing project involves enhancing the functionality and user interface of the POS system for efficient stock tracking and management.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="job">
+						<div class="job-header">
+							<span class="job-title">Full stack Developer</span> |
+							<span class="job-dates">11/2024 to 02/2025</span>
+						</div>
+						<div class="company-info">Homebasket - Kumasi, Ghana</div>
+						<div class="job-description">
+							<ul>
+								<li>HomeBasket.store is a platform that for selling foodstuff with a focus on KNUST students.</li>
+								<li>Developed an interactive E-commerce web app for HomeBasket.store, a platform that sells foodstuff with a focus on KNUST students.</li>
+								<li>
+									The project includes features for seamless ordering, a smooth checkout process, and a robust admin section that allows full control over the site, including product
+									management, order tracking, and user administration.
+								</li>
+								<li>HomeBasket.store, a platform that sells foodstuff with a focus on KNUST students.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="job">
+						<div class="job-header">
+							<span class="job-title">Frontend Web Developer</span> |
+							<span class="job-dates">02/2023 to 06/2023</span>
+						</div>
+						<div class="company-info">Cedirates - Accra, Ghana</div>
+						<div class="job-description">
+							<ul>
+								<li>
+									As a frontend developer on CediRates.com, I collaborated on building and deploying a responsive interface that provides real-time exchange rates, fuel prices, and
+									economic news, focusing on user-friendly design and smooth navigation.
+								</li>
+								<li>CediRates.com</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="job">
+						<div class="job-header">
+							<span class="job-title">Frontend Web Developer</span> |
+							<span class="job-dates">11/2022 to 03/2023</span>
+						</div>
+						<div class="company-info">WalletHack - Rhode Island, United States</div>
+						<div class="job-description">
+							<ul>
+								<li>
+									Collaborated with a senior developer on a Stellar block chain project, focusing on creating a seamless, user-friendly environment for on-the-go trading and various
+									other activities.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="job">
+						<div class="job-header">
+							<span class="job-title">PHP Developer</span> |
+							<span class="job-dates">11/2022 to 03/2023</span>
+						</div>
+						<div class="company-info">UNIFIN - Ashford, United Kingdom</div>
+						<div class="job-description">
+							<ul>
+								<li>Contributed to the development of a closed system designed to establish a community based on referrals.</li>
+								<li>The system implemented a democratic decision-making process, where community members voted on the allocation of earned funds.</li>
+								<li>Leveraged highly customizable components to build a high-performance application for this purpose.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Education -->
+			<div class="section">
+				<div class="section-title">Education and Training</div>
+				<div class="section-content first">
+					<div class="education-item">
+						<div class="school-name">Kwame Nkrumah University of Science and Technology (KNUST) - Kumasi, Ghana</div>
+						<div class="degree">BSc.</div>
+						<div class="program-info">Computer Science, Expected in 09/2027</div>
+					</div>
+
+					<div class="education-item">
+						<div class="school-name">Presbyterian Boys' Secondary School</div>
+						<div class="degree">W.A.S.S.C.E</div>
+						<div class="program-info">General Science, 09/2021</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Common Skills -->
+			<div class="section">
+				<div class="section-title">Soft Skills</div>
+				<div class="section-content first">
+					<div class="skills-grid">
+						<div class="skills-column">
+							<ul>
+								<li>Strategic planning and execution</li>
+								<li>Team coordination and project leadership</li>
+								<li>Business ideation and startup development</li>
+								<li>Financial reporting support</li>
+								<li>Teamwork abilities</li>
+								<li>Excellent communication</li>
+								<li>Proactive problem-solver</li>
+								<li>Creative</li>
+								<li>Strong time management</li>
+								<li>Passionate about mentorship</li>
+								<li>Fostering inclusive environments</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Technical Skills -->
+			<div class="section">
+				<div class="section-title">Technical Skills</div>
+				<div class="section-content first">
+					<div class="skills-grid">
+						<div class="skills-column">
+							<ul>
+								<li>JavaScript</li>
+								<li>Python</li>
+								<li>React.js</li>
+								<li>Node.js</li>
+								<li>Express.js</li>
+								<li>PostgresSQL</li>
+								<li>React Native</li>
+								<li>NextJs</li>
+								<li>MongoDB</li>
+								<li>Prisma</li>
+								<li>Paystack API</li>
+								<li>Hostinger VPS</li>
+							</ul>
+						</div>
+						<div class="skills-column">
+							<ul>
+								<li>Stripe</li>
+								<li>AWS</li>
+								<li>JIRA</li>
+								<li>Cloudinary</li>
+								<li>Nginx</li>
+								<li>Typescript</li>
+								<li>Tailwindcss</li>
+								<li>Springboot</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Languages -->
+			<div class="section">
+				<div class="section-title">Languages</div>
+				<div style="width: 80%; border-left: 1px solid #d4cfcfc7; padding-left: 20px">
+					<div class="section-content no-border language-section">
+						<div class="language-item">
+							<span class="language-name">English:</span>
+							<span class="language-level">First Language</span>
+						</div>
+					</div>
+					<div class="section-content no-border language-section">
+						<div class="language-item">
+							<span class="language-name">French:</span>
+							<span class="language-level">Beginner</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- References -->
+			<div class="section">
+				<div class="section-title">References</div>
+				<div class="section-content first">References available upon request.</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+		<script>
+			function printResume() {
+				const printContents = document.getElementById("print-area").innerHTML;
+				const originalContents = document.body.innerHTML;
+
+				document.body.innerHTML = printContents;
+				window.print();
+				// document.body.innerHTML = originalContents;
+				// location.reload(); // reload the page to restore event listeners
+			}
+			// Call this function when you want to generate the PDF
+			printResume();
+		</script>
+	</body>
+</html>

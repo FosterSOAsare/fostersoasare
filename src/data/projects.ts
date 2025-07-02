@@ -7,7 +7,7 @@ import XennolImage from "@/assets/xennol.png";
 import MirrorImage from "@/assets/mirror.jpg";
 import AevodropImage from "@/assets/aevodrop.jpg";
 import MafoilImage from "@/assets/mafoil.jpg";
-import {StaticImageData} from "next/image";
+import { StaticImageData } from "next/image";
 
 export interface homeProjectType {
     name: string;
@@ -17,6 +17,7 @@ export interface homeProjectType {
     downloads?: string;
     stack?: string[];
     image: string | StaticImageData;
+    status?: string
 }
 
 export const homeProjects: homeProjectType[] = [
@@ -30,6 +31,7 @@ export const homeProjects: homeProjectType[] = [
     {
         name: "Homebasket",
         link: "https://homebasket.store",
+        status: 'Currently down due to unpaid hosting',
         image: HomeBasketImage,
         stack: ["React", "Express", "Tailwindcss", "MongoDB", "Typescript"],
         desc: `A complete eCommerce website with the aim of allowing users to browse and purchase foodstuff, specifically catering to KNUST students. The platform includes an admin section where admins can add, edit, update, or delete products, manage orders, and oversee user interactions.`,
@@ -41,13 +43,13 @@ export const homeProjects: homeProjectType[] = [
         image: MafoilImage,
         link: "https://mafoil.vercel.app/",
     },
-    {
-        name: "Xennol Landing Page",
-        link: "https://xennol.com",
-        image: XennolImage,
-        stack: ["NextJs", "AWS", "Tailwindcss", "TypeScript"],
-        desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
-    },
+    // {
+    //     name: "Xennol Landing Page",
+    //     link: "https://xennol.com",
+    //     image: XennolImage,
+    //     stack: ["NextJs", "AWS", "Tailwindcss", "TypeScript"],
+    //     desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
+    // },
     {
         name: "Mirror Web app",
         link: "https://mirror-fa.vercel.app/",
@@ -88,7 +90,7 @@ export const homeProjects: homeProjectType[] = [
 export type projectType = {
     name: string;
     stack: string[];
-    link?: {name: string; href: string};
+    link?: { name: string; href: string };
     year: string;
 };
 const projects: projectType[] = [
@@ -96,78 +98,73 @@ const projects: projectType[] = [
         name: "Mafoil E-commerce",
         year: "2024",
         stack: ["NextJs", "MongoDB", "RTK Query", "NodeJs"],
-        link: {name: "mafo.il", href: "https://mafoil.vercel.app/"},
+        link: { name: "mafo.il", href: "https://mafoil.vercel.app/" },
     },
     {
         name: "Aevodrop Website",
         stack: ["NextJs", "Tailwindcss", "Typescript"],
-        link: {name: "aevodrop.vercel.app", href: "https://aevodrop.vercel.app/"},
+        link: { name: "aevodrop.vercel.app", href: "https://aevodrop.vercel.app/" },
         year: "2024",
     },
     {
         name: "Taste-eat Restaurant App",
         stack: ["NodeJs", "React", "Express", "MongoDB", "MUI"],
-        link: {name: "taste-eat-eta.vercel.com", href: "https://taste-eat-eta.vercel.app/"},
+        link: { name: "taste-eat-eta.vercel.app", href: "https://taste-eat-eta.vercel.app/" },
         year: "2023",
     },
-    {
-        name: "Xennol",
-        stack: ["NextJs", "Tailwindcss", "Typescript"],
-        link: {name: "xennol.com", href: "https://xennol.com"},
-        year: "2023",
-    },
+
     {
         name: "Mirror Web app",
-        link: {name: "Mirror", href: "https://mirror-fa.vercel.app/"},
+        link: { name: "Mirror", href: "https://mirror-fa.vercel.app/" },
         year: "2023",
         stack: ["React", "Tailwindcss", "TypeScript"],
     },
     {
         name: "Blog App",
         stack: ["React", "Scss", "Firebase", "Javascript"],
-        link: {name: "blog.app", href: "https://blog-site-d48bd.firebaseapp.com/"},
+        link: { name: "blog.app", href: "https://blog-site-d48bd.firebaseapp.com/" },
         year: "2023",
     },
     {
         name: "Election App",
         stack: ["React", "Scss", "Firebase", "Context API"],
-        link: {name: "election.app", href: "https://elections-app-2aa42.firebaseapp.com/"},
+        link: { name: "election.app", href: "https://elections-app-2aa42.firebaseapp.com/" },
         year: "2023",
     },
     {
         name: "Wise Website Clone",
         stack: ["React", "Javascript", "MUI", "Firebase"],
-        link: {name: "wise-ef84b.web.app", href: "https://wise-ef84b.web.app/"},
+        link: { name: "wise-ef84b.web.app", href: "https://wise-ef84b.web.app/" },
         year: "2022",
     },
     {
         name: "Hubspot Clone",
         stack: ["HTML", "CSS", "Typescript", "DOM"],
-        link: {name: "hubspot-two.vercel.app", href: "https://hubspot-two.vercel.app/"},
+        link: { name: "hubspot-two.vercel.app", href: "https://hubspot-two.vercel.app/" },
         year: "2022",
     },
     {
         name: "Rest Country API",
         stack: ["HTML", "CSS", "Javascript", "DOM"],
-        link: {name: "rest-country-api-xi.vercel.app", href: "https://rest-country-api-xi.vercel.app/"},
+        link: { name: "rest-country-api-xi.vercel.app", href: "https://rest-country-api-xi.vercel.app/" },
         year: "2021",
     },
     {
         name: "Modern Nest Landing Page",
         stack: ["React", "Tailwindcss", "Javascript", "Swiper"],
-        link: {name: "furniture-beryl.vercel.app", href: "https://furniture-beryl.vercel.app/"},
+        link: { name: "furniture-beryl.vercel.app", href: "https://furniture-beryl.vercel.app/" },
         year: "2022",
     },
     {
         name: "Carpatin Landing Page",
         stack: ["MUI", "React", "Javascript"],
-        link: {name: "carpatin.vercel.app", href: "https://carpatin.vercel.app/"},
+        link: { name: "carpatin.vercel.app", href: "https://carpatin.vercel.app/" },
         year: "2022",
     },
     {
         name: "Ramen UI Landing Page",
         stack: ["React", "Tailwindcss", "Scss"],
-        link: {name: "ramen-ui.vercel.app", href: "https://ramen-ui.vercel.app/"},
+        link: { name: "ramen-ui.vercel.app", href: "https://ramen-ui.vercel.app/" },
         year: "2021",
     },
     {

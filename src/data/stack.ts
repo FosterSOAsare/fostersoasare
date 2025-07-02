@@ -14,6 +14,11 @@ import Github from '@/assets/github.svg'
 import Cloudinary from '@/assets/cloudinary.svg'
 import AWSImage from '@/assets/aws.svg'
 import ReduxImage from '@/assets/redux.svg'
+import PrismaImage from '@/assets/prisma.svg'
+import PythonImage from '@/assets/python.svg'
+import NginxImage from '@/assets/nginx.svg'
+import ReactNativeImage from '@/assets/react-native.svg'
+import SpringBootImage from '@/assets/spring-boot.svg'
 
 const stack = [
   { name: 'HTML', image: HTMLImage },
@@ -31,6 +36,11 @@ const stack = [
   { name: 'Cloudinary', image: Cloudinary },
   { name: 'AWS', image: AWSImage },
   { name: 'PHP', image: PhpImage },
-  { name: 'MySQL', image: MySQLImage }
+  { name: 'MySQL', image: MySQLImage },
+  { name: 'Prisma', image: PrismaImage },
+  { name: 'Python', image: PythonImage },
+  { name: 'Nginx', image: NginxImage },
+  { name: 'React Native', image: ReactNativeImage },
+  { name: "Spring boot", image: SpringBootImage }
 ]
 export default stack

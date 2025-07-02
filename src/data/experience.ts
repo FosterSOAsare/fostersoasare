@@ -3,7 +3,7 @@ export type experienceType = {
     company: string;
     desc: string;
     stack: string[];
-    links: {name: string; href: string}[];
+    links: { name: string; href: string }[];
     startDate: string;
     endDate: string;
     type?: string;
@@ -11,12 +11,24 @@ export type experienceType = {
 
 const experiences: experienceType[] = [
     {
+        position: "Founder",
+        company: "Dev Initiative",
+        desc: "Teaching a team of resilient individuals how to build industry standard web applications. The initiative focuses on empowering individuals with the skills needed to excel in web development, fostering a community of learners and innovators.",
+        stack: ["ReactJs", "MongoDB", "Typescript", "TailwindCSS", "Express", "Node"],
+        links: [
+            // {name: "Procvcreator", href: "https://procvcreator.com"},
+            // { name: 'Xennol Website', href: 'https://xennol.com' },
+        ],
+        startDate: "JUNE 2024",
+        endDate: "PRESENT",
+    },
+    {
         position: "Fullstack Developer",
         type: "CONTRACT",
         company: "Homebasket",
         desc: `Developed an interactive eCommerce web app for HomeBasket.store, a platform that sells foodstuff with a focus on KNUST students. The project includes features for seamless ordering, a smooth checkout process, and a robust admin section that allows full control over the site, including product management, order tracking, and user administration.`,
         stack: ["Node", "Express", "MongoDB", "Subdomains", "TailwindCSS"],
-        links: [{name: "Homebasket.store", href: "https://homebasket.store"}],
+        links: [{ name: "Homebasket.store", href: "https://homebasket.store" }],
         startDate: "NOV 2024",
         endDate: "FEB 2025",
     },
@@ -29,24 +41,13 @@ const experiences: experienceType[] = [
         startDate: "AUG 2023",
         endDate: "PRESENT",
     },
-    // {
-    //     position: "Fullstack Developer",
-    //     company: "Xennol Limited",
-    //     desc: "Produced resilient, impactful code and constructed a visually engaging landing page for the company, bringing innovative ideas to life. My approach balances technical precision with creativity, adapting smoothly to various roles and project demands.",
-    //     stack: ["NextJs", "MongoDB", "Typescript", "TailwindCSS", "AWS", "Express", "Node"],
-    //     links: [
-    //         {name: "Procvcreator", href: "https://procvcreator.com"},
-    //         // { name: 'Xennol Website', href: 'https://xennol.com' },
-    //     ],
-    //     startDate: "JUL 2023",
-    //     endDate: "PRESENT",
-    // },
+
     {
         position: "Frontend Web Developer",
         company: "Cedirates",
         desc: `As a frontend developer on CediRates.com, I collaborated on building and deploying a responsive interface that provides real-time exchange rates, fuel prices, and economic news, focusing on user-friendly design and smooth navigation`,
         stack: ["React", "CSS", "Javascript"],
-        links: [{name: "Cedirates", href: "https://cedirates.com"}],
+        links: [{ name: "Cedirates", href: "https://cedirates.com" }],
         startDate: "FEB 2023",
         endDate: "JUN 2023",
     },
@@ -56,7 +57,7 @@ const experiences: experienceType[] = [
         type: "CONTRACT",
         desc: `Collaborated with a senior developer on a Stellar blockchain project, focusing on creating a seamless, user-friendly environment for on-the-go trading and various other activities.`,
         stack: ["Angular", "SCSS", "Javascript", "Codepen"],
-        links: [{name: "Wallethack", href: "https://wallethack.com"}],
+        links: [{ name: "Wallethack", href: "https://wallethack.com" }],
         startDate: "NOV 2022",
         endDate: "MAR 2023",
     },

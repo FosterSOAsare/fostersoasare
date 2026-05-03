@@ -2,7 +2,7 @@ import TasteEatImage from "@/assets/tasteeat.png";
 import HubspotImage from "@/assets/hubspot.png";
 import WiseImage from "@/assets/wise-app.png";
 import BlogAppImage from "@/assets/blog-app.png";
-import HomeBasketImage from "@/assets/homebasket.jpg";
+// import HomeBasketImage from "@/assets/homebasket.jpg";
 import LogicoreImage from "@/assets/logicore.jpg";
 import ArchImage from "@/assets/arch.jpg";
 import MirrorImage from "@/assets/mirror.jpg";
@@ -43,14 +43,14 @@ export const homeProjects: homeProjectType[] = [
     stack: ["React", "NodeJs", "MUI", "Express", "MongoDB", "JavaScript"],
     desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
   },
-  {
-    name: "Homebasket",
-    link: "https://homebasket.store",
-    status: "Currently down due to unpaid hosting",
-    image: HomeBasketImage,
-    stack: ["React", "Express", "Tailwindcss", "MongoDB", "Typescript"],
-    desc: `A complete eCommerce website with the aim of allowing users to browse and purchase foodstuff, specifically catering to KNUST students. The platform includes an admin section where admins can add, edit, update, or delete products, manage orders, and oversee user interactions.`,
-  },
+  // {
+  //   name: "Homebasket",
+  //   link: "https://homebasket.store",
+  //   status: "Currently down due to unpaid hosting",
+  //   image: HomeBasketImage,
+  //   stack: ["React", "Express", "Tailwindcss", "MongoDB", "Typescript"],
+  //   desc: `A complete eCommerce website with the aim of allowing users to browse and purchase foodstuff, specifically catering to KNUST students. The platform includes an admin section where admins can add, edit, update, or delete products, manage orders, and oversee user interactions.`,
+  // },
   {
     name: "Mafoil E-commerce",
     desc: "Fully fledged e-commerce website built with current technologies to have latest features in all e-commerce applications. These includes auth , wishlist , cart , orders amd several others. ",

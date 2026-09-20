@@ -12,7 +12,7 @@ const UserInfo = ({ selected, setSelected }: { selected: number; setSelected: Re
 			<div className="w-full max-w-[500px] h-full lg:ml-auto flex flex-col">
 				<div className="mb-12 lg:mb-6">
 					<div className="w-16 h-16 overflow-hidden border-[3px] bg-slate-100 mb-4 relative rounded-full">
-						<Image src={ProfileImage} alt="Asare Foster" fill></Image>
+						<Image src={ProfileImage} alt="Asare Foster" fill sizes="64px" />
 					</div>
 					<h1 className="font-bold font-clash text-3xl lg:text-5xl mb-2 text-white">Foster Asare </h1>
 					<p className="font-medium font-clash mb-4 text-sec">Fullstack Website Developer</p>

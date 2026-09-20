@@ -42,10 +42,9 @@ export default function App({Component, pageProps}: AppProps) {
     return (
         <div>
             <Head>
-                <link href="/manifest.json" rel="manifest" />
                 <meta content="width=device-width,initial-scale=1" name="viewport" />
                 <meta content="#000000" name="theme-color" />
-                <link href="/icon.jpeg" rel="apple-touch-icon" />
+                <link href="https://fostersoasare.vercel.app/icons/logo.png" rel="apple-touch-icon" />
                 <meta property="og:image" content="https://fostersoasare.vercel.app/share.jpg" data-rh="true" />
                 <meta property="twitter:image" content="https://fostersoasare.vercel.app/share.jpg" data-rh="true" />
                 <link rel="canonical" href="https://fostersoasare.vercel.app" data-rh="true" />
@@ -71,7 +70,6 @@ export default function App({Component, pageProps}: AppProps) {
                     data-rh="true"
                 />
                 <meta name="twitter:card" content="summary_large_image" />
-                <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,700,500&display=swap" rel="stylesheet" />
             </Head>
             <main className="w-auto relative">
                 <div

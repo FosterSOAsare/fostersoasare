@@ -9,23 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@svgr/webpack": "^8.1.0",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "^10.5.0",
+    "aos": "^2.3.4",
     "next": "^16.2.4",
     "next-pwa": "^5.6.0",
-    "postcss": "^8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.12.0",
-    "tailwindcss": "^3.4.19"
+    "react-icons": "^4.12.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
-    "@types/express": "^4.17.25",
     "@types/node": "^20.19.39",
-    "aos": "^2.3.4",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.1.1"
   }
 }

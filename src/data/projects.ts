@@ -36,13 +36,7 @@ export const homeProjects: homeProjectType[] = [
     stack: ["NextJs", "Tailwindcss", "TypeScript"],
     desc: `An architecture platform showcasing modern building and house designs. Users can explore projects, view galleries, and connect with architects. Includes an admin panel for managing content efficiently.`,
   },
-  {
-    name: "Restaurant Web App(taste-eat)",
-    link: "https://taste-eat-eta.vercel.app/",
-    image: TasteEatImage,
-    stack: ["React", "NodeJs", "MUI", "Express", "MongoDB", "JavaScript"],
-    desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
-  },
+
   // {
   //   name: "Homebasket",
   //   link: "https://homebasket.store",
@@ -65,13 +59,13 @@ export const homeProjects: homeProjectType[] = [
     image: MafoilImage,
     link: "https://mafoil.vercel.app/",
   },
-  {
-    name: "Logicore Website",
-    link: "https://logicore-psi.vercel.app",
-    image: LogicoreImage,
-    stack: ["NextJs", "Tailwindcss", "TypeScript"],
-    desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
-  },
+  // {
+  //   name: "Logicore Website",
+  //   link: "https://logicore-psi.vercel.app",
+  //   image: LogicoreImage,
+  //   stack: ["NextJs", "Tailwindcss", "TypeScript"],
+  //   desc: `A complete website with the aim of allowing users book reservations , read blogs , read and contact chefs and as well browse through dishes. Has the admin section also where admin can edit , add , update or delete blogs , chefs or dishes. This is highly performant and scalable in production`,
+  // },
   {
     name: "Mirror Web app",
     link: "https://mirror-fa.vercel.app/",
@@ -93,13 +87,7 @@ export const homeProjects: homeProjectType[] = [
     stack: ["NextJs", "Tailwindcss", "Typescript"],
     link: "https://aevodrop.vercel.app/",
   },
-  {
-    name: "Blog App(read.cash clone)",
-    desc: "Growing up , I was at an advantage to get to know of a website called read.cash where I could write articles and get paid. I therefore decided to create a blog app that mimicks what that website does",
-    link: "https://blog-site-d48bd.firebaseapp.com/",
-    image: BlogAppImage,
-    stack: ["React", "Firebase", "Scss", "Javascript"],
-  },
+
   {
     name: "Wise website clone",
     desc: "A clone of the homepage of an internation website that deals with the sending of incentives from abroad to their relatives in mostly African countries",
@@ -159,24 +147,24 @@ const projects: projectType[] = [
     year: "2023",
     stack: ["React", "Tailwindcss", "TypeScript"],
   },
-  {
-    name: "Blog App",
-    stack: ["React", "Scss", "Firebase", "Javascript"],
-    link: {
-      name: "blog.app",
-      href: "https://blog-site-d48bd.firebaseapp.com/",
-    },
-    year: "2023",
-  },
-  {
-    name: "Election App",
-    stack: ["React", "Scss", "Firebase", "Context API"],
-    link: {
-      name: "election.app",
-      href: "https://elections-app-2aa42.firebaseapp.com/",
-    },
-    year: "2023",
-  },
+  // {
+  //   name: "Blog App",
+  //   stack: ["React", "Scss", "Firebase", "Javascript"],
+  //   link: {
+  //     name: "blog.app",
+  //     href: "https://blog-site-d48bd.firebaseapp.com/",
+  //   },
+  //   year: "2023",
+  // },
+  // {
+  //   name: "Election App",
+  //   stack: ["React", "Scss", "Firebase", "Context API"],
+  //   link: {
+  //     name: "election.app",
+  //     href: "https://elections-app-2aa42.firebaseapp.com/",
+  //   },
+  //   year: "2023",
+  // },
   {
     name: "Wise Website Clone",
     stack: ["React", "Javascript", "MUI", "Firebase"],
@@ -192,15 +180,7 @@ const projects: projectType[] = [
     },
     year: "2022",
   },
-  {
-    name: "Rest Country API",
-    stack: ["HTML", "CSS", "Javascript", "DOM"],
-    link: {
-      name: "rest-country-api-xi.vercel.app",
-      href: "https://rest-country-api-xi.vercel.app/",
-    },
-    year: "2021",
-  },
+
   {
     name: "Modern Nest Landing Page",
     stack: ["React", "Tailwindcss", "Javascript", "Swiper"],
@@ -209,28 +189,6 @@ const projects: projectType[] = [
       href: "https://furniture-beryl.vercel.app/",
     },
     year: "2022",
-  },
-  {
-    name: "Carpatin Landing Page",
-    stack: ["MUI", "React", "Javascript"],
-    link: { name: "carpatin.vercel.app", href: "https://carpatin.vercel.app/" },
-    year: "2022",
-  },
-  {
-    name: "Ramen UI Landing Page",
-    stack: ["React", "Tailwindcss", "Scss"],
-    link: { name: "ramen-ui.vercel.app", href: "https://ramen-ui.vercel.app/" },
-    year: "2021",
-  },
-  {
-    name: "Google Docs Clone ",
-    stack: ["Oauth", "Node", "NextJs", "MongoDB", "Express"],
-    year: "2023",
-  },
-  {
-    name: "Car Rental Web App",
-    stack: ["Oauth", "Node", "NextJs", "MongoDB", "Express", "Tailwindcss"],
-    year: "2023",
   },
 ];
 

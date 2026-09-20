@@ -117,7 +117,7 @@ const MainContent = ({ setSelected }: { setSelected: React.Dispatch<React.SetSta
 						let fade = index % 4 === 0 ? "fade-up" : index % 3 === 0 ? "fade-down" : index % 2 === 1 ? "fade-right" : "fade-left";
 						return (
 							<div key={index} className="w-full relative h-12 hover:cursor-pointer" data-aos={fade} title={item?.name}>
-								<Image src={item?.image} fill alt="Image" />
+								<Image src={item?.image} fill sizes="64px" alt={item?.name} />
 							</div>
 						);
 					})}

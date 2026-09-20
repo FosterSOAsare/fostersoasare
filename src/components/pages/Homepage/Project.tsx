@@ -36,7 +36,7 @@ const Project = ({
         href={link}
         className="w-full md:w-1/3 h-[180px] lg:h-28 rounded-[5px] overflow-hidden relative"
       >
-        <Image src={image} fill alt="Project Lead Image" />
+        <Image src={image} fill sizes="(max-width: 768px) 100vw, 240px" alt={name} />
       </a>
       <div className="w-full md:w-2/3">
         <a

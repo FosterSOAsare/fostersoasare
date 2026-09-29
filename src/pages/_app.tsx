@@ -45,8 +45,11 @@ export default function App({Component, pageProps}: AppProps) {
                 <meta content="width=device-width,initial-scale=1" name="viewport" />
                 <meta content="#000000" name="theme-color" />
                 <link href="https://fostersoasare.vercel.app/icons/logo.png" rel="apple-touch-icon" />
-                <meta property="og:image" content="https://fostersoasare.vercel.app/share.jpg" data-rh="true" />
-                <meta property="twitter:image" content="https://fostersoasare.vercel.app/share.jpg" data-rh="true" />
+                <meta property="og:image" content="https://fostersoasare.vercel.app/og.png" data-rh="true" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:alt" content="Foster Asare — Fullstack Website Developer" />
+                <meta name="twitter:image" content="https://fostersoasare.vercel.app/og.png" data-rh="true" />
                 <link rel="canonical" href="https://fostersoasare.vercel.app" data-rh="true" />
                 <meta
                     name="description"
@@ -61,9 +64,7 @@ export default function App({Component, pageProps}: AppProps) {
                 />
                 <meta property="og:url" content="https://fostersoasare.vercel.app" data-rh="true" />
                 <meta name="twitter:title" content="Experienced Software Developer proficient in building projects for client's needs." data-rh="true" />
-                <meta property="og:image" content="https://fostersoasare.vercel.app/share.jpg" />
                 <meta name="twitter:url" content="https://fostersoasare.vercel.app" data-rh="true" />
-                <meta property="twitter:image" content="https://fostersoasare.vercel.app/share.jpg" />
                 <meta
                     name="twitter:description"
                     content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code."

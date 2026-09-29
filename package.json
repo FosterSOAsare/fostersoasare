@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "og": "node scripts/generate-og.mjs"
   },
   "dependencies": {
     "aos": "^2.3.4",

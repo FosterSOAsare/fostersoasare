@@ -76,27 +76,13 @@ I also use Framer Motion, Zustand, Socket.IO, Paystack, Stripe, Cloudinary and Z
 
 ## 📊 GitHub Activity
 
-<p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=fostersoasare&show_icons=true&hide_border=true&bg_color=0B1739&title_color=2DD4BF&icon_color=2DD4BF&text_color=CBD5E1&rank_icon=github" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fostersoasare&layout=compact&hide_border=true&bg_color=0B1739&title_color=2DD4BF&text_color=CBD5E1&langs_count=6" alt="Top languages" />
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=fostersoasare&background=0B1739&ring=2DD4BF&fire=2DD4BF&currStreakLabel=2DD4BF&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=94A3B8&stroke=1E293B&hide_border=true" alt="GitHub streak" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=fostersoasare&theme=tokyonight" alt="GitHub stats" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=fostersoasare&theme=tokyonight" alt="Most used languages" width="49%" />
 </p>
 
 <p align="center"><i>Open to internships, freelance work and interesting problems. The fastest way to reach me is <a href="mailto:fostersoasare@gmail.com">email</a>.</i></p>
-
----
-
-<details>
-<summary><b>🧑‍💻 About this repo</b></summary>
-<br/>
-
-This repo is also the source of my portfolio, [fostersoasare.me](https://fostersoasare.me), built with **Next.js**, **TypeScript** and **Tailwind CSS**.
-
-```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build
-npm run og       # regenerate the Open Graph image
-npm run icons    # regenerate favicons and app icons
-```
-
-</details>

@@ -4,7 +4,7 @@ import AOS from "aos";
 
 import Footer from "@/components/Footer";
 
-import ProfileImage from "@/assets/pp.jpg";
+import ProfileImage from "@/assets/profile.png";
 
 const UserInfo = ({ selected, setSelected }: { selected: number; setSelected: React.Dispatch<React.SetStateAction<number>> }) => {
 	return (

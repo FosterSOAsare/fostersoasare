@@ -44,7 +44,6 @@ export default function App({Component, pageProps}: AppProps) {
             <Head>
                 <meta content="width=device-width,initial-scale=1" name="viewport" />
                 <meta content="#000000" name="theme-color" />
-                <link href="https://fostersoasare.vercel.app/icons/logo.png" rel="apple-touch-icon" />
                 <meta property="og:image" content="https://fostersoasare.vercel.app/og.png" data-rh="true" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />

@@ -15,7 +15,6 @@ export default function Home() {
 					content="Experienced Software Developer proficient in coding and debugging, consistently delivering project objectives through the creation of refined, scalable, and production-ready code. Adept at collaborating within Agile and Scrum frameworks to achieve team goals effectively."
 				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/logo.svg" />
 			</Head>
 			<main className="w-full relative h-auto">
 				<section className="flex relative text-white max-w-6xl mx-auto flex-col lg:flex-row justify-center items-start">
